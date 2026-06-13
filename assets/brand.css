@@ -1,0 +1,191 @@
+/* ============================================================
+   TON618 Capital — house stylesheet (gold on black)
+   Drop into any HTML deliverable. Self-contained, no build step.
+   Loads webfonts from Google Fonts; degrades to Georgia/Arial.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Grounds */
+  --t618-obsidian: #0B0B0C;
+  --t618-onyx:     #16161A;
+  --t618-graphite: #26262B;
+  --t618-ash:      #3A3A40;   /* faint dividers on dark */
+
+  /* Gold */
+  --t618-gold:      #C9A24B;
+  --t618-champagne: #E6D2A2;
+  --t618-antique:   #8A6D2B;
+
+  /* Light / ink */
+  --t618-ivory:     #F6F3EC;
+  --t618-ink:       #111113;
+  --t618-warmgray:  #9A958A;
+
+  /* Semantic */
+  --t618-jade:    #3F8F6B;
+  --t618-oxblood: #B0413E;
+
+  /* Type */
+  --t618-serif: "EB Garamond", Georgia, "Times New Roman", serif;
+  --t618-sans:  "Inter", "Helvetica Neue", Arial, sans-serif;
+
+  /* Spacing rhythm */
+  --t618-gutter: 48px;
+  --t618-hairline: 1px;
+}
+
+/* ---------- Base: dark surface ---------- */
+.t618 {
+  background: var(--t618-obsidian);
+  color: var(--t618-ivory);
+  font-family: var(--t618-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "tnum" 1, "lnum" 1; /* tabular lining figures */
+  margin: 0;
+  padding: var(--t618-gutter);
+}
+
+/* Light/print variant: add class="t618 t618--paper" */
+.t618--paper {
+  background: var(--t618-ivory);
+  color: var(--t618-ink);
+}
+.t618--paper .t618-eyebrow,
+.t618--paper .t618-caption,
+.t618--paper .t618-disclosure { color: var(--t618-warmgray); }
+.t618--paper .t618-rule { background: var(--t618-antique); }
+.t618--paper table.t618-table thead th {
+  background: var(--t618-ink); color: var(--t618-champagne);
+}
+.t618--paper table.t618-table tbody tr:nth-child(even) { background: #ECE7DA; }
+
+/* ---------- Headlines ---------- */
+.t618 h1, .t618 h2, .t618 h3, .t618 .t618-display {
+  font-family: var(--t618-serif);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  margin: 0 0 0.4em;
+}
+.t618 .t618-display { font-size: 3rem; }
+.t618 h1 { font-size: 2rem; }
+.t618 h2 { font-size: 1.5rem; }
+.t618 h3 { font-size: 1.2rem; }
+
+/* Eyebrow label above titles — sell-side research feel */
+.t618-eyebrow {
+  font-family: var(--t618-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--t618-gold);
+  margin: 0 0 0.5em;
+  display: block;
+}
+
+/* ---------- Hairline rules ---------- */
+.t618-rule {
+  border: 0;
+  height: var(--t618-hairline);
+  background: var(--t618-gold);
+  margin: 1.5rem 0;
+  opacity: 0.9;
+}
+.t618-rule--faint { background: var(--t618-ash); }
+/* "quasar" rule: hairline with a gold dot at the left end */
+.t618-rule--quasar { position: relative; background: var(--t618-ash); }
+.t618-rule--quasar::before {
+  content: ""; position: absolute; left: 0; top: 50%;
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--t618-gold); transform: translateY(-50%);
+  box-shadow: 0 0 8px 1px rgba(201,162,75,0.6);
+}
+
+/* ---------- Document title / masthead: icon + "TON618 Capital" on one line ---------- */
+.t618-title { display: inline-flex; align-items: center; gap: 0.55em; font-family: var(--t618-serif); }
+.t618-title .icon { height: 1.7em; width: auto; flex: none; }
+.t618-title .name { font-size: 1.9rem; font-weight: 600; letter-spacing: -0.01em; color: var(--t618-ivory); white-space: nowrap; }
+.t618-title .name .six18 { color: var(--t618-gold); }      /* "618" always gold */
+.t618-title .name .cap { font-weight: 400; }               /* "Capital" set lighter */
+.t618--paper .t618-title .name { color: var(--t618-ink); } /* ink text on light surfaces */
+
+/* ---------- Wordmark (stacked) ---------- */
+.t618-wordmark { font-family: var(--t618-serif); line-height: 1; }
+.t618-wordmark .mark { font-size: 2.4rem; font-weight: 600; color: var(--t618-ivory); }
+.t618-wordmark .mark .six18 { color: var(--t618-gold); }
+.t618-wordmark .sub {
+  display: block; font-family: var(--t618-sans); font-size: 0.7rem;
+  text-transform: uppercase; letter-spacing: 0.3em; color: var(--t618-warmgray);
+  margin-top: 0.3em;
+}
+
+/* ---------- Hero figure ---------- */
+.t618-figure {
+  font-family: var(--t618-serif);
+  font-size: 3.2rem;
+  color: var(--t618-gold);
+  line-height: 1;
+}
+.t618-figure .label {
+  display: block; font-family: var(--t618-sans); font-size: 0.75rem;
+  text-transform: uppercase; letter-spacing: 0.1em; color: var(--t618-warmgray);
+  margin-top: 0.4em;
+}
+
+/* ---------- Cards / panels (flat, no shadow) ---------- */
+.t618-panel {
+  background: var(--t618-onyx);
+  border: var(--t618-hairline) solid var(--t618-ash);
+  padding: 1.25rem 1.5rem;
+}
+.t618-panel--accent { border-top: 2px solid var(--t618-gold); }
+
+/* ---------- Tables ---------- */
+table.t618-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+table.t618-table thead th {
+  background: var(--t618-onyx);
+  color: var(--t618-champagne);
+  font-family: var(--t618-sans);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--t618-gold);
+}
+table.t618-table tbody td {
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--t618-ash);
+}
+table.t618-table td.num, table.t618-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
+table.t618-table tbody tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+.t618 .pos { color: var(--t618-jade); }
+.t618 .neg { color: var(--t618-oxblood); }
+
+/* ---------- Captions / disclosure ---------- */
+.t618-caption { font-size: 0.8125rem; color: var(--t618-warmgray); }
+.t618-disclosure {
+  font-size: 0.72rem; color: var(--t618-warmgray); line-height: 1.5;
+  border-top: 1px solid var(--t618-ash); padding-top: 0.75rem; margin-top: 2rem;
+}
+
+/* ---------- Links / buttons ---------- */
+.t618 a { color: var(--t618-champagne); text-decoration: none; border-bottom: 1px solid var(--t618-antique); }
+.t618 a:hover { color: var(--t618-gold); }
+.t618-btn {
+  display: inline-block; font-family: var(--t618-sans); font-weight: 600;
+  font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--t618-obsidian); background: var(--t618-gold);
+  padding: 0.6rem 1.1rem; border: 0; cursor: pointer;
+}
+.t618-btn--ghost { background: transparent; color: var(--t618-gold); border: 1px solid var(--t618-gold); }

@@ -1,0 +1,116 @@
+<svg width="2254.549291573452" height="316.7394481730052" viewBox="0 0 2254.549291573452 316.7394481730052" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TON618 Capital"><g transform="translate(-43.824 -43.824) scale(0.69853)">
+  <defs>
+    <!-- Accretion disk / ring: bright gold core fading to antique at the wings -->
+    <linearGradient id="disk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#8A6D2B" stop-opacity="0"/>
+      <stop offset="12%" stop-color="#8A6D2B"/>
+      <stop offset="36%" stop-color="#C9A24B"/>
+      <stop offset="50%" stop-color="#F2E2B0"/>
+      <stop offset="64%" stop-color="#C9A24B"/>
+      <stop offset="88%" stop-color="#8A6D2B"/>
+      <stop offset="100%" stop-color="#8A6D2B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ringg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#F2E2B0"/>
+      <stop offset="45%" stop-color="#C9A24B"/>
+      <stop offset="100%" stop-color="#8A6D2B"/>
+    </linearGradient>
+    <radialGradient id="coin" cx="42%" cy="36%" r="72%">
+      <stop offset="0%"  stop-color="#F4E6B8"/>
+      <stop offset="42%" stop-color="#D8B25C"/>
+      <stop offset="80%" stop-color="#C9A24B"/>
+      <stop offset="100%" stop-color="#9A7B30"/>
+    </radialGradient>
+    <radialGradient id="diskHaze" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C9A24B" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#C9A24B" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <!-- keeps only the front (lower) half of the ring -->
+    <clipPath id="frontHalf"><rect x="-160" y="256" width="832" height="300"/></clipPath>
+    <!-- window: interior of the gold box, just larger than the sphere; clips the
+         disk so its tips are cut off at the frame -->
+    <clipPath id="boxWin"><rect x="121" y="121" width="270" height="270"/></clipPath>
+  </defs>
+
+  <!-- opaque obsidian window fill: makes the mark self-contained so a single
+       version reads on any background (light or dark) -->
+  <rect x="120" y="120" width="272" height="272" fill="#0B0B0C"/>
+
+  <!-- BACK of the ring: full disk behind the core, tilted 22deg about the sphere
+       center, clipped to the window so its tips are cut at the frame.
+       A thin champagne rim gives the disk a luminous halo edge. -->
+  <g clip-path="url(#boxWin)">
+    <ellipse cx="256" cy="256" rx="307" ry="34" fill="url(#disk)" opacity="0.77" filter="url(#glow)"
+             transform="rotate(-22 256 256)"/>
+    <ellipse cx="256" cy="256" rx="307" ry="34" fill="none" stroke="#F2E2B0" stroke-width="1.5"
+             opacity="0.5" transform="rotate(-22 256 256)"/>
+    <ellipse cx="256" cy="256" rx="316" ry="42" fill="none" stroke="#F2E2B0" stroke-width="1"
+             opacity="0.3" transform="rotate(-22 256 256)"/>
+  </g>
+
+  <!-- compact event-horizon sphere (smaller relative to the window) -->
+  <circle cx="256" cy="256" r="100" fill="#0B0B0C"/>
+
+  <!-- bright sphere outline (photon ring) — thicker, grown inward so the outer
+       diameter is unchanged (outer edge stays at r103) -->
+  <circle cx="256" cy="256" r="91.56" fill="none" stroke="url(#ringg)" stroke-width="22.87" filter="url(#glow)"/>
+
+  <!-- lensed halo arcing over the top of the sphere (clipped to the window) -->
+  <g clip-path="url(#boxWin)">
+    <path d="M 156 314 A 116 116 0 1 1 356 314" fill="none" stroke="url(#ringg)"
+          stroke-width="6" stroke-linecap="round" opacity="0.85" filter="url(#glow)"/>
+  </g>
+
+  <!-- central Bitcoin coin (smaller relative to the sphere) -->
+  <circle cx="256" cy="256" r="56" fill="#0B0B0C"/>
+  <circle cx="256" cy="256" r="52" fill="url(#coin)"/>
+  <circle cx="256" cy="256" r="52" fill="none" stroke="#7A5F22" stroke-width="2.5"/>
+  <circle cx="256" cy="256" r="45" fill="none" stroke="#F4E6B8" stroke-width="1.6" opacity="0.45"/>
+
+  <!-- Bitcoin "B" symbol, scaled to the smaller coin -->
+  <g transform="translate(256 256) scale(0.55) translate(-256 -256)">
+    <g fill="#141417">
+      <rect x="240" y="190" width="11" height="20" rx="3"/>
+      <rect x="261" y="190" width="11" height="20" rx="3"/>
+      <rect x="240" y="302" width="11" height="20" rx="3"/>
+      <rect x="261" y="302" width="11" height="20" rx="3"/>
+      <rect x="226" y="206" width="17" height="100" rx="3"/>
+    </g>
+    <g fill="none" stroke="#141417" stroke-width="16" stroke-linecap="butt">
+      <path d="M 243 214 H 276 A 21 21 0 0 1 276 256 H 243"/>
+      <path d="M 243 256 H 282 A 23 23 0 0 1 282 300 H 243"/>
+    </g>
+  </g>
+
+  <!-- FOREGROUND: only the front (lower) half of the ring, slightly transparent,
+       so the near side orbits in front of the dense core; also clipped to the window -->
+  <g clip-path="url(#boxWin)">
+    <g transform="rotate(-22 256 256)">
+      <g clip-path="url(#frontHalf)">
+        <ellipse cx="256" cy="256" rx="307" ry="34" fill="url(#disk)" opacity="0.51" filter="url(#glow)"/>
+        <ellipse cx="256" cy="256" rx="307" ry="34" fill="none" stroke="#F2E2B0" stroke-width="1.5" opacity="0.5"/>
+        <ellipse cx="256" cy="256" rx="316" ry="42" fill="none" stroke="#F2E2B0" stroke-width="1" opacity="0.3"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- gold window box: contains the sphere, just slightly larger; frames the view -->
+  <rect x="120" y="120" width="272" height="272" fill="none" stroke="url(#ringg)" stroke-width="6"/>
+</g><path d="M310 0V73L523 100V1235H472Q243 1235 150 1215L123 966H32V1341H1335V966H1243L1216 1215Q1133 1233 888 1233H839V100L1052 73V0Z" fill="#F6F3EC" transform="translate(271.80 230.00) scale(0.14169 -0.14169)"/>
+<path d="M432 672Q432 353 519.5 216.5Q607 80 797 80Q986 80 1073.5 217.0Q1161 354 1161 672Q1161 989 1073.5 1122.0Q986 1255 797 1255Q607 1255 519.5 1122.0Q432 989 432 672ZM100 672Q100 1356 797 1356Q1141 1356 1317.0 1182.5Q1493 1009 1493 672Q1493 331 1315.0 155.5Q1137 -20 797 -20Q458 -20 279.0 155.0Q100 330 100 672Z" fill="#F6F3EC" transform="translate(465.34 230.00) scale(0.14169 -0.14169)"/>
+<path d="M1155 1242 975 1268V1341H1452V1268L1280 1242V0H1163L336 1078V100L516 73V0H39V73L211 100V1242L39 1268V1341H498L1155 484Z" fill="#F6F3EC" transform="translate(691.05 230.00) scale(0.14169 -0.14169)"/><path d="M964 416Q964 205 855.0 92.5Q746 -20 545 -20Q315 -20 192.5 155.0Q70 330 70 662Q70 878 134.5 1035.0Q199 1192 315.0 1274.0Q431 1356 582 1356Q738 1356 883 1313V1008H796L753 1202Q684 1254 602 1254Q502 1254 439.5 1126.0Q377 998 366 768Q475 815 582 815Q765 815 864.5 712.0Q964 609 964 416ZM541 81Q614 81 642.0 160.0Q670 239 670 397Q670 538 631.0 614.0Q592 690 515 690Q441 690 364 667V662Q364 81 541 81Z" fill="#C9A24B" transform="translate(900.60 230.00) scale(0.14169 -0.14169)"/>
+<path d="M685 110 918 86V0H164V86L396 110V1121L165 1045V1130L543 1352H685Z" fill="#C9A24B" transform="translate(1045.69 230.00) scale(0.14169 -0.14169)"/>
+<path d="M925 1011Q925 901 871.0 823.5Q817 746 719 711Q834 668 895.0 578.0Q956 488 956 362Q956 172 846.5 76.0Q737 -20 506 -20Q68 -20 68 362Q68 490 130.0 580.0Q192 670 302 711Q205 748 152.0 825.0Q99 902 99 1014Q99 1178 207.5 1270.0Q316 1362 514 1362Q708 1362 816.5 1268.5Q925 1175 925 1011ZM672 362Q672 516 632.0 586.0Q592 656 506 656Q424 656 388.0 588.0Q352 520 352 362Q352 207 388.5 144.0Q425 81 506 81Q592 81 632.0 147.0Q672 213 672 362ZM641 1011Q641 1142 608.0 1201.5Q575 1261 508 1261Q444 1261 413.5 1202.0Q383 1143 383 1011Q383 875 413.0 819.0Q443 763 508 763Q577 763 609.0 820.5Q641 878 641 1011Z" fill="#C9A24B" transform="translate(1190.77 230.00) scale(0.14169 -0.14169)"/><path d="M774 -20Q448 -20 266.0 157.5Q84 335 84 655Q84 1001 259.0 1178.5Q434 1356 778 1356Q987 1356 1227 1305L1233 1012H1167L1137 1186Q1067 1229 974.5 1252.5Q882 1276 786 1276Q529 1276 411.0 1125.0Q293 974 293 657Q293 365 416.5 211.0Q540 57 776 57Q890 57 991.0 84.5Q1092 112 1151 158L1188 358H1253L1247 43Q1027 -20 774 -20Z" fill="#F6F3EC" transform="translate(1376.48 230.00) scale(0.14169 -0.14169)"/>
+<path d="M465 961Q619 961 691.5 898.0Q764 835 764 705V70L881 45V0H623L604 94Q490 -20 313 -20Q72 -20 72 260Q72 354 108.5 415.5Q145 477 225.0 509.5Q305 542 457 545L598 549V696Q598 793 562.5 839.0Q527 885 453 885Q353 885 270 838L236 721H180V926Q342 961 465 961ZM598 479 467 475Q333 470 285.5 423.0Q238 376 238 266Q238 90 381 90Q449 90 498.5 105.5Q548 121 598 145Z" fill="#F6F3EC" transform="translate(1570.02 230.00) scale(0.14169 -0.14169)"/>
+<path d="M152 870 45 895V940H309L311 885Q353 921 423.5 943.0Q494 965 567 965Q747 965 845.5 840.0Q944 715 944 481Q944 242 836.5 111.0Q729 -20 526 -20Q413 -20 311 2Q317 -70 317 -111V-365L481 -389V-436H33V-389L152 -365ZM764 481Q764 673 701.5 766.5Q639 860 512 860Q395 860 317 827V76Q406 59 512 59Q764 59 764 481Z" fill="#F6F3EC" transform="translate(1698.81 230.00) scale(0.14169 -0.14169)"/>
+<path d="M379 1247Q379 1203 347.0 1171.0Q315 1139 270 1139Q226 1139 194.0 1171.0Q162 1203 162 1247Q162 1292 194.0 1324.0Q226 1356 270 1356Q315 1356 347.0 1324.0Q379 1292 379 1247ZM369 70 530 45V0H43V45L203 70V870L70 895V940H369Z" fill="#F6F3EC" transform="translate(1843.90 230.00) scale(0.14169 -0.14169)"/>
+<path d="M334 -20Q238 -20 190.5 37.0Q143 94 143 197V856H20V901L145 940L246 1153H309V940H524V856H309V215Q309 150 338.5 117.0Q368 84 416 84Q474 84 557 100V35Q522 11 456.0 -4.5Q390 -20 334 -20Z" fill="#F6F3EC" transform="translate(1924.52 230.00) scale(0.14169 -0.14169)"/>
+<path d="M465 961Q619 961 691.5 898.0Q764 835 764 705V70L881 45V0H623L604 94Q490 -20 313 -20Q72 -20 72 260Q72 354 108.5 415.5Q145 477 225.0 509.5Q305 542 457 545L598 549V696Q598 793 562.5 839.0Q527 885 453 885Q353 885 270 838L236 721H180V926Q342 961 465 961ZM598 479 467 475Q333 470 285.5 423.0Q238 376 238 266Q238 90 381 90Q449 90 498.5 105.5Q548 121 598 145Z" fill="#F6F3EC" transform="translate(2005.14 230.00) scale(0.14169 -0.14169)"/>
+<path d="M367 70 528 45V0H41V45L201 70V1352L41 1376V1421H367Z" fill="#F6F3EC" transform="translate(2133.93 230.00) scale(0.14169 -0.14169)"/></svg>
