@@ -64,11 +64,16 @@ ul.tight{margin:.3rem 0 .3rem 1.1rem}ul.tight li{margin:.2rem 0;font-size:.95rem
 svg text{font-family:"Inter",Arial,sans-serif}
 .pdf-link{display:inline-block;font-family:var(--t618-sans);font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.09em;color:var(--t618-antique);border:1px solid var(--t618-antique);border-radius:2px;padding:.28rem .65rem;text-decoration:none}
 .pdf-link:hover{background:var(--t618-antique);color:var(--t618-ivory)}
+.report-title{font-family:var(--t618-serif);line-height:1.06;margin:.2rem 0 .35rem}
+.report-title .co{display:block;font-size:2.7rem;font-weight:600;letter-spacing:-0.015em;color:var(--t618-ink)}
+.report-title .tkr{display:block;font-family:var(--t618-sans);font-size:.95rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--t618-antique);margin-top:.45rem}
+h1.thesis{font-size:1.55rem;font-weight:500;line-height:1.22;margin:.7rem 0 .55rem}
 @page{size:Letter;margin:0.8in}
 @media print{
   body.t618{padding:0;font-size:10.2pt;background:#FFFFFF}
   main{max-width:none}
   .kpis{gap:1rem;margin:1.1rem 0}.t618-figure{font-size:2rem}
+  .report-title .co{font-size:2.1rem}h1.thesis{font-size:1.3rem}
   table.t618-table{font-size:8pt;page-break-inside:avoid}
   h2,h3,.exhibit-label{page-break-after:avoid}
   figure,.callout{page-break-inside:avoid}
@@ -91,8 +96,12 @@ svg text{font-family:"Inter",Arial,sans-serif}
 </header>
 <hr class="t618-rule">
 
-<span class="t618-eyebrow">Initiating Coverage · Space Exploration Technologies Corp · Nasdaq: SPCX</span>
-<h1>Priced for Mars: the $1.77&nbsp;trillion listing embeds the bull case, and then some.</h1>
+<span class="t618-eyebrow">Initiating Coverage · Tech-Equity Valuation · 13 June 2026</span>
+<div class="report-title">
+  <span class="co">Space Exploration Technologies Corp.</span>
+  <span class="tkr">Nasdaq: SPCX &nbsp;·&nbsp; SpaceX</span>
+</div>
+<h1 class="thesis">Priced for Mars: the $1.77&nbsp;trillion listing embeds the bull case, and then some.</h1>
 <p class="lede">We initiate on SPCX at <strong>AVOID / do-not-chase</strong>. Our base-case fair value is <strong>$66</strong>
 against the $135 IPO and today's $160.95 first-day close (+19%, ~$2.1T market cap) — a 51% premium at the offer, ~59% above where we see value at the close. SpaceX is a
 genuinely exceptional franchise: a launch near-monopoly, a hyper-scaling Starlink, and a newly-merged frontier-AI arm. But at
@@ -634,7 +643,7 @@ from any party in connection with this report and charges nothing for it. <em>Re
 adviser or broker-dealer in any capacity.</p>
 <p class="t618-caption"><strong>Use of AI &amp; feedback.</strong> Artificial intelligence was used in the creation of this report; all methodology and data
 integrity have been reviewed and approved by a professional. Direct feedback to CIO Keyth Beck, <a href="mailto:keyth@ton618capital.com">keyth@ton618capital.com</a>.
-<strong>Version</strong> 1.9 · analyst consensus verified via yfinance (free; mean $164 / median $175 / high $227 / low $63; 4 buy / 1 sell); v1.8 verified prices
+<strong>Version</strong> 2.0 · company name &amp; ticker now lead the cover in a display-size title; v1.9 analyst consensus verified via yfinance (free; mean $164 / median $175 / high $227 / low $63; 4 buy / 1 sell); v1.8 verified prices
 &amp; volume vs Massive Market Data ($160.95 close, 522M sh / ~$85B) and noted no listed options yet (§13); v1.7 rebuilt the ownership section with a formal EDGAR reconciliation (control-first; economic-vs-voting wedge;
 Valor ~503M Class A largest outside holder); v1.5 added the Ownership section + Download-PDF link; v1.4 "The Current State of the SpaceX Story" and the §11 relative valuation; v1.3
 compliance disclosures; v1.2 today's $160.95 close and §10 intrinsic-method selection · analyst: TON618 Equity Research.</p>
