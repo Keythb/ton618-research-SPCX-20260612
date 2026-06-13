@@ -62,6 +62,8 @@ ul.tight{margin:.3rem 0 .3rem 1.1rem}ul.tight li{margin:.2rem 0;font-size:.95rem
 .toc{columns:2;column-gap:2rem;font-size:.84rem;color:#4A4840}
 .sources{font-size:.74rem;color:#4A4840;line-height:1.55;columns:2;column-gap:1.6rem}
 svg text{font-family:"Inter",Arial,sans-serif}
+.pdf-link{display:inline-block;font-family:var(--t618-sans);font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.09em;color:var(--t618-antique);border:1px solid var(--t618-antique);border-radius:2px;padding:.28rem .65rem;text-decoration:none}
+.pdf-link:hover{background:var(--t618-antique);color:var(--t618-ivory)}
 @page{size:Letter;margin:0.8in}
 @media print{
   body.t618{padding:0;font-size:10.2pt;background:#FFFFFF}
@@ -71,6 +73,7 @@ svg text{font-family:"Inter",Arial,sans-serif}
   h2,h3,.exhibit-label{page-break-after:avoid}
   figure,.callout{page-break-inside:avoid}
   .t618 a{border-bottom:none;color:inherit}
+  .pdf-link{display:none}
 }
 @media(max-width:640px){.kpis,.grid2,.two-col,.toc,.sources{grid-template-columns:1fr;column-count:1}}
 </style>
@@ -83,7 +86,8 @@ svg text{font-family:"Inter",Arial,sans-serif}
     <img class="icon" src="assets/logo/ton618_icon.svg" alt="TON618 Capital">
     <span class="name">TON<span class="six18">618</span> <span class="cap">Capital</span></span>
   </span>
-  <span class="t618-caption">Equity Research · Technology · 12 June 2026</span>
+  <span class="t618-caption" style="display:flex;align-items:center;gap:0.9rem">Equity Research · Technology · 12 June 2026
+    <a class="pdf-link" href="TON618_SPCX_Tech-Equity-Valuation.pdf" download>&#8595; Download PDF</a></span>
 </header>
 <hr class="t618-rule">
 
@@ -106,7 +110,7 @@ moonshots simultaneously. The risk/reward is asymmetric to the downside. <span c
 <div class="toc">1. Executive Summary · The Current State of the SpaceX Story · 0C. Media &amp; Market Research · 2. Investment Context ·
 3. Business Model · 4. Competitive Moat · 5. Proprietary Technology · 6. Financial Analysis · 7. KPIs &amp; Unit Economics ·
 8. Gearing &amp; Leverage · 9. Forecast · 10. Intrinsic Valuation (DCF) · 11. Relative Valuation — Peers &amp; Indexes ·
-12. Valuation Synthesis · 13. Risk · 14. Catalysts · 15. ESG &amp; Governance · 16. Recommendation · 17. Disclosures</div>
+12. Valuation Synthesis · 13. Risk · 14. Catalysts · Ownership &amp; Beneficial Holders · 15. ESG &amp; Governance · 16. Recommendation · 17. Disclosures</div>
 
 <!-- 1. EXEC SUMMARY -->
 <h2><span class="no">01</span>Executive Summary</h2>
@@ -550,6 +554,34 @@ Fair value falls toward the $27 bear case — a &gt;80% drawdown from the close.
 <p><strong>Invalidation trip-wires (what would change our call):</strong> (i) Starlink ARPU stabilizing above $70 with continued net adds;
 (ii) the AI segment showing a credible path to cash-flow positive; (iii) a de-rate below ~$55. Any two would move us from Avoid toward Hold/Accumulate.</p>
 
+<!-- OWNERSHIP -->
+<h2>Ownership — Who Owns SpaceX, and Who Benefits Most</h2>
+<span class="t618-eyebrow">Who is betting largest · who the upside accrues to</span>
+<p>The public should know who sits on the other side of this listing. In both economic and voting terms SpaceX is
+<strong>Elon Musk's company</strong> — and the gap between how much he <em>owns</em> and how much he <em>controls</em> is the single most
+important ownership fact in the filing.</p>
+<span class="exhibit-label">Exhibit 12 · Beneficial ownership after the offering (S-1/A, 1 May 2026 basis)</span>
+<table class="t618-table">
+<thead><tr><th>Holder</th><th class="num">Economic stake</th><th class="num">Voting power</th><th>Note</th></tr></thead>
+<tbody>
+<tr><td><strong>Elon Musk</strong> — founder, CEO/CTO</td><td class="num">~42%</td><td class="num">~85%</td><td>849.5M Class A + 5,569.1M Class B (incl. 350M options), held via family trusts</td></tr>
+<tr><td>Other officers &amp; directors</td><td class="num">small</td><td class="num">small</td><td>e.g. Gwynne Shotwell (President/COO); counted in the group total</td></tr>
+<tr><td>Long-time institutional backers</td><td class="num">significant minority</td><td class="num">low</td><td>Alphabet/Google (director D. Harrison), Founders Fund &amp; Gigafund (L. Nosek), Valor (A. Gracias), Draper, Fidelity — mostly Class A</td></tr>
+<tr><td>Employees</td><td class="num">meaningful</td><td class="num">low</td><td>Class A + options; an equity-compensation culture</td></tr>
+<tr><td>xAI's former investors</td><td class="num">minority</td><td class="num">low</td><td>received SpaceX stock in the Feb 2026 all-stock xAI merger (e.g. Nvidia, Fidelity, sovereign funds)</td></tr>
+<tr><td><strong>New public shareholders</strong> — this IPO</td><td class="num">~4%</td><td class="num">~1%</td><td>555.6M new Class A (one vote each); the float you can buy</td></tr>
+</tbody></table>
+<p class="exhibit-note">Class B carries 10 votes to Class A's one, so Class B holders (overwhelmingly Musk) control ~88.5% of the vote. Precise percentages for 5%
+holders other than Musk are not cleanly disclosed at tabulable granularity in the filing extraction; non-Musk holders are identified from the S-1's
+beneficial-ownership table and director affiliations. Source: SpaceX S-1/A, 3 Jun 2026.</p>
+<p><strong>Who benefits most.</strong> Overwhelmingly Elon Musk. He holds the largest economic stake <em>and</em> near-total voting control, so the
+upside of success accrues first and foremost to him — and he alone decides how it is pursued (capital allocation, the xAI merger, whether and when to
+ever pay a dividend). After Musk, the winners are the early venture backers who bought in years ago at a fraction of today's price, and employees holding
+equity. <strong>New public shareholders are last in line on both counts:</strong> they are funding the company's ~$14B-a-year cash burn while owning ~4%
+of the economics and ~1% of the votes. You are buying a minority economic interest in a founder-controlled company, with essentially no ability to
+influence how it is run. That is not automatically bad — aligned founders can compound value for decades — but it is the central governance fact, and it
+is why we treat key-person and control concentration (§13, §15) as the dominant non-financial risk.</p>
+
 <!-- 15. ESG / GOV -->
 <h2><span class="no">15</span>ESG &amp; Governance</h2>
 <ul class="tight">
@@ -594,8 +626,8 @@ from any party in connection with this report and charges nothing for it. <em>Re
 adviser or broker-dealer in any capacity.</p>
 <p class="t618-caption"><strong>Use of AI &amp; feedback.</strong> Artificial intelligence was used in the creation of this report; all methodology and data
 integrity have been reviewed and approved by a professional. Direct feedback to CIO Keyth Beck, <a href="mailto:keyth@ton618capital.com">keyth@ton618capital.com</a>.
-<strong>Version</strong> 1.4 · adds "The Current State of the SpaceX Story" (plain-English view) and a comprehensive §11 relative valuation
-(per-segment peer multiples + S&amp;P 500 / NASDAQ 100 benchmarks); v1.3 added compliance disclosures; v1.2 added today's $160.95 close and §10
+<strong>Version</strong> 1.5 · adds an Ownership section (who owns SpaceX / who benefits most) and a downloadable-PDF link; v1.4 added "The Current
+State of the SpaceX Story" and the comprehensive §11 relative valuation; v1.3 compliance disclosures; v1.2 today's $160.95 close and §10
 intrinsic-method selection · analyst: TON618 Equity Research.</p>
 <span class="exhibit-label">Selected sources (media sweep, retrieved 12 Jun 2026)</span>
 <div class="sources">
