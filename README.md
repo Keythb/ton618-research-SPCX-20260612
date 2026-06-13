@@ -30,4 +30,8 @@ Sum-of-the-parts (70%) triangulated by DCF (30%); reverse-DCF for embedded expec
 - Market/analyst context (NPR, Morningstar, Oppenheimer) retrieved 12 June 2026.
 
 ## Disclosures
-TON618 Capital holds no SPCX position. SPCX is not a Fund holding or a BTC-correlated instrument. Produced by the `ton618-tech-valuation` tool; not reviewed by a registered investment adviser; **not investment advice.** For information purposes only.
+**Regulatory status — publisher's exclusion.** Published solely as general, impersonal information of regular circulation; not tailored to any individual and not issued in connection with compensation from any client. TON618 Capital has no clients and distributes all research free of charge, and publishes in reliance on the publisher's exclusion from the definition of "investment adviser" under the Investment Advisers Act of 1940 (§202(a)(11)(D); cf. *Lowe v. SEC*, 472 U.S. 181 (1985)). Nothing herein is personalized investment advice.
+
+**Conflicts / ownership / compensation / registration.** TON618 Capital is a Bitcoin fund and may hold or transact in securities it discusses; the Fund holds **no position in SPCX** as of the report date; received **no compensation** in connection with this report and charges nothing for it; and is **not registered** as an investment adviser or broker-dealer in any capacity.
+
+**Use of AI & feedback.** AI was used in the creation of this report; all methodology and data integrity have been reviewed and approved by a professional. Feedback to CIO Keyth Beck — keyth@ton618capital.com. For information purposes only.
