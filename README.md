@@ -2,7 +2,9 @@
 
 **Initiating coverage · 12 June 2026 · NASDAQ: SPCX**
 
-**Recommendation: AVOID at IPO.** Base-case fair value **$66/share** vs. the **$135** IPO (~$1.77T equity) and ~$150 first-trade — **−51%**. Bull case $128 still sits below the print. Our independent sum-of-the-parts corroborates Morningstar's $63 bear far better than Oppenheimer's $190 bull.
+**Recommendation: AVOID at IPO.** Base-case fair value **$66/share** vs. the **$135** IPO (~$1.77T equity) and ~$161 first-day close — **−51% / −59%**. Bull case $128 still sits below the print. Our independent sum-of-the-parts corroborates Morningstar's $63 bear and Doug Kass's ~$70, far better than Oppenheimer's $190 bull.
+
+*v1.1 — light/print house style (matches the AI BTC TAM note); adds a §0C deep-research media sweep (~50 cited findings across 5 research threads).*
 
 ## Read the report
 - **Live report:** https://keythb.github.io/ton618-research-SPCX-20260612/

@@ -4,275 +4,307 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TON618 Capital — SPCX (SpaceX) Tech-Equity Valuation</title>
-<link rel="icon" href="assets/logo/ton618_icon.svg">
-<link rel="stylesheet" href="assets/brand.css">
+<meta name="description" content="TON618 Capital initiating coverage on SPCX (SpaceX): AVOID at IPO, fair value $66 vs $135 offer. CFA-standard tech-equity valuation from the S-1/A.">
+<link rel="icon" type="image/svg+xml" href="assets/logo/ton618_icon.svg">
 <style>
-  .wrap{max-width:1040px;margin:0 auto}
-  h2.sec{font-family:"EB Garamond",Georgia,serif;font-size:1.5rem;margin:2.6rem 0 .2rem}
-  h2.sec .no{color:var(--t618-gold);font-size:1.0rem;letter-spacing:.12em;margin-right:.6rem;vertical-align:.15em}
-  h3{font-family:"EB Garamond",Georgia,serif;font-size:1.18rem;margin:1.5rem 0 .4rem;color:var(--t618-champagne)}
-  p,li{font-size:.97rem;line-height:1.55}
-  .lede{font-size:1.06rem;line-height:1.6}
-  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin:1.4rem 0}
-  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin:1.2rem 0}
-  .fact{border-left:2px solid var(--t618-gold);padding:.1rem 0 .1rem .8rem}
-  .fact .v{font-family:"EB Garamond",Georgia,serif;font-size:1.7rem;color:var(--t618-champagne);display:block;line-height:1.1}
-  .fact .l{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--t618-warmgray)}
-  figure{margin:1.4rem 0}
-  figcaption{font-size:.78rem;color:var(--t618-warmgray);margin-top:.4rem}
-  .two-col{column-count:2;column-gap:2.2rem}
-  .two-col p{margin-top:0}
-  .callout{background:var(--t618-onyx);border-top:1px solid var(--t618-gold);border-bottom:1px solid var(--t618-ash);padding:1rem 1.2rem;margin:1.4rem 0}
-  .bull{color:var(--t618-jade,#3F8F6B)} .bear{color:var(--t618-oxblood,#B0413E)}
-  table.t618-table{font-size:.88rem}
-  .small{font-size:.82rem;color:var(--t618-warmgray)}
-  ul.tight{margin:.3rem 0 .3rem 1.1rem} ul.tight li{margin:.15rem 0}
-  .toc{columns:2;column-gap:2rem;font-size:.85rem}
-  .toc a{color:var(--t618-champagne);text-decoration:none}
-  svg text{font-family:"Inter",Arial,sans-serif}
-  @media print{.wrap{max-width:none}.two-col,.toc{column-count:2}}
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap');
+:root{
+  --t618-obsidian:#0B0B0C;--t618-onyx:#16161A;--t618-graphite:#26262B;--t618-ash:#3A3A40;
+  --t618-gold:#C9A24B;--t618-champagne:#E6D2A2;--t618-antique:#8A6D2B;
+  --t618-ivory:#F6F3EC;--t618-ink:#111113;--t618-warmgray:#9A958A;
+  --t618-jade:#3F8F6B;--t618-oxblood:#B0413E;
+  --t618-serif:"EB Garamond",Georgia,"Times New Roman",serif;
+  --t618-sans:"Inter","Helvetica Neue",Arial,sans-serif;--t618-gutter:48px;
+}
+*{box-sizing:border-box}
+body.t618{background:var(--t618-ivory);color:var(--t618-ink);font-family:var(--t618-sans);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;font-feature-settings:"tnum" 1,"lnum" 1;margin:0;padding:var(--t618-gutter)}
+main{max-width:880px;margin:0 auto}
+.t618 h1,.t618 h2,.t618 h3{font-family:var(--t618-serif);font-weight:500;letter-spacing:-0.01em;line-height:1.15;margin:0 0 .4em}
+.t618 h1{font-size:2.1rem}
+.t618 h2{font-size:1.5rem;margin-top:2.4rem}
+.t618 h2 .no{color:var(--t618-antique);font-size:.95rem;letter-spacing:.12em;margin-right:.55em;vertical-align:.12em}
+.t618 h3{font-size:1.18rem;margin-top:1.6rem;color:var(--t618-antique)}
+.t618 p{margin:.65em 0}
+.lede{font-size:1.07rem;line-height:1.6}
+.t618-eyebrow{font-family:var(--t618-sans);font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--t618-antique);margin:0 0 .5em;display:block}
+.t618-rule{border:0;height:1px;background:var(--t618-antique);margin:1.5rem 0;opacity:.9}
+.t618-rule--quasar{border:0;height:1px;position:relative;background:#D8D2C4;margin:1.6rem 0}
+.t618-rule--quasar::before{content:"";position:absolute;left:0;top:50%;width:7px;height:7px;border-radius:50%;background:var(--t618-gold);transform:translateY(-50%);box-shadow:0 0 8px 1px rgba(201,162,75,.6)}
+.t618-title{display:inline-flex;align-items:center;gap:.55em;font-family:var(--t618-serif)}
+.t618-title .icon{height:1.7em;width:auto;flex:none}
+.t618-title .name{font-size:1.9rem;font-weight:600;letter-spacing:-0.01em;color:var(--t618-ink);white-space:nowrap}
+.t618-title .name .six18{color:var(--t618-gold)}.t618-title .name .cap{font-weight:400}
+.masthead{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+.t618-figure{font-family:var(--t618-serif);font-size:2.7rem;color:var(--t618-antique);line-height:1}
+.t618-figure .label{display:block;font-family:var(--t618-sans);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--t618-warmgray);margin-top:.45em;line-height:1.4}
+.t618-figure.neg{color:var(--t618-oxblood)}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin:1.8rem 0}
+table.t618-table{width:100%;border-collapse:collapse;font-size:.86rem;margin:1rem 0 1.5rem;background:#FFFFFF}
+table.t618-table thead th{background:var(--t618-ink);color:var(--t618-champagne);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:.7rem;text-align:left;padding:.6rem .75rem;border-bottom:1px solid var(--t618-gold)}
+table.t618-table thead th.num{text-align:right}
+table.t618-table tbody td{padding:.55rem .75rem;border-bottom:1px solid #E2DCCE;vertical-align:top}
+table.t618-table td.num{text-align:right;font-variant-numeric:tabular-nums}
+table.t618-table tbody tr:nth-child(even){background:#F8F6F0}
+.pos{color:var(--t618-jade)}.neg{color:var(--t618-oxblood)}
+.t618-caption{font-size:.8125rem;color:var(--t618-warmgray)}
+.exhibit-label{font-family:var(--t618-sans);font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--t618-antique);margin:1.8rem 0 .5rem;display:block}
+.exhibit-note{font-size:.75rem;color:var(--t618-warmgray);margin-top:.4rem;margin-bottom:1.4rem}
+.t618-disclosure{font-size:.72rem;color:var(--t618-warmgray);line-height:1.55;border-top:1px solid var(--t618-antique);padding-top:.75rem;margin-top:2.5rem}
+.t618 a{color:var(--t618-antique);text-decoration:none;border-bottom:1px solid #D8D2C4}
+.t618 a:hover{color:var(--t618-gold)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;margin:1.2rem 0}
+.two-col{column-count:2;column-gap:2rem;font-size:.9rem}.two-col p{margin-top:0}
+.callout{background:#FFFFFF;border-left:3px solid var(--t618-gold);padding:.9rem 1.1rem;margin:1.4rem 0}
+.fact{border-left:2px solid var(--t618-antique);padding:.1rem 0 .1rem .8rem}
+.fact .v{font-family:var(--t618-serif);font-size:1.6rem;color:var(--t618-antique);display:block;line-height:1.1}
+.fact .l{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--t618-warmgray)}
+ul.tight{margin:.3rem 0 .3rem 1.1rem}ul.tight li{margin:.2rem 0;font-size:.95rem}
+.toc{columns:2;column-gap:2rem;font-size:.84rem;color:#4A4840}
+.sources{font-size:.74rem;color:#4A4840;line-height:1.55;columns:2;column-gap:1.6rem}
+svg text{font-family:"Inter",Arial,sans-serif}
+@page{size:Letter;margin:0.8in}
+@media print{
+  body.t618{padding:0;font-size:10.2pt;background:#FFFFFF}
+  main{max-width:none}
+  .kpis{gap:1rem;margin:1.1rem 0}.t618-figure{font-size:2rem}
+  table.t618-table{font-size:8pt;page-break-inside:avoid}
+  h2,h3,.exhibit-label{page-break-after:avoid}
+  figure,.callout{page-break-inside:avoid}
+  .t618 a{border-bottom:none;color:inherit}
+}
+@media(max-width:640px){.kpis,.grid2,.two-col,.toc,.sources{grid-template-columns:1fr;column-count:1}}
 </style>
 </head>
 <body class="t618">
-<div class="wrap">
+<main>
 
-<!-- ============ COVER / MASTHEAD ============ -->
-<header style="display:flex;justify-content:space-between;align-items:center">
+<header class="masthead">
   <span class="t618-title">
-    <img class="icon" src="assets/logo/ton618_icon.svg" alt="" style="height:1.6em;vertical-align:middle">
-    <span class="name" style="font-family:'EB Garamond',Georgia,serif;color:var(--t618-gold);font-size:1.25rem">
-      TON<span class="six18">618</span> <span class="cap" style="font-weight:400">Capital</span></span>
+    <img class="icon" src="assets/logo/ton618_icon.svg" alt="TON618 Capital">
+    <span class="name">TON<span class="six18">618</span> <span class="cap">Capital</span></span>
   </span>
-  <span class="t618-caption">Equity Research · Tech · 12 June 2026</span>
+  <span class="t618-caption">Equity Research · Technology · 12 June 2026</span>
 </header>
 <hr class="t618-rule">
 
-<span class="t618-eyebrow">INITIATING COVERAGE · SPACE EXPLORATION TECHNOLOGIES CORP · NASDAQ: SPCX</span>
-<h1 style="font-family:'EB Garamond',Georgia,serif;font-size:2.2rem;line-height:1.18;margin:.4rem 0 .6rem">
-  Priced for Mars: the $1.77&nbsp;trillion IPO embeds the bull case and then some.</h1>
-<p class="lede">We initiate on SPCX at <strong>AVOID / do-not-chase</strong> with a 12-month base-case fair value of
-<strong>$66</strong> versus the $135 IPO and ~$150 first-trade. SpaceX is a genuinely exceptional franchise —
-a launch monopoly, a hyper-scaling Starlink, and a newly merged frontier-AI arm — but at ~90&times; trailing
-revenue and deeply FCF-negative, the listing prices in flawless execution across three moonshots at once.
-The risk/reward is asymmetric to the downside. <span class="small">Data shows the figures; "we" denotes the Fund's view.</span></p>
+<span class="t618-eyebrow">Initiating Coverage · Space Exploration Technologies Corp · Nasdaq: SPCX</span>
+<h1>Priced for Mars: the $1.77&nbsp;trillion listing embeds the bull case, and then some.</h1>
+<p class="lede">We initiate on SPCX at <strong>AVOID / do-not-chase</strong>. Our base-case fair value is <strong>$66</strong>
+against the $135 IPO and a ~$161 first-day close — a 51% premium to the offer and ~59% above where we see value. SpaceX is a
+genuinely exceptional franchise: a launch near-monopoly, a hyper-scaling Starlink, and a newly-merged frontier-AI arm. But at
+~90&times; trailing revenue and roughly $14&nbsp;billion of annual cash burn, the listing prices in flawless execution across three
+moonshots simultaneously. The risk/reward is asymmetric to the downside. <span class="t618-caption">"Data shows" denotes fact; "we" denotes the Fund's view.</span></p>
 
-<section class="grid3" style="margin-top:1.6rem">
+<section class="kpis">
   <div class="t618-figure">$135<span class="label">IPO price · ~$1.77T equity</span></div>
-  <div class="t618-figure">$66<span class="label">TON618 fair value (PT)</span></div>
-  <div class="t618-figure neg">-51%<span class="label">PT vs. IPO</span></div>
+  <div class="t618-figure">$66<span class="label">TON618 fair value</span></div>
+  <div class="t618-figure neg">-51%<span class="label">vs. IPO · -59% vs. $161 close</span></div>
 </section>
 <hr class="t618-rule--quasar">
 
-<p class="small" style="margin-top:1rem"><strong>Contents.</strong></p>
-<div class="toc">
-1. Executive Summary · 2. Investment Context · 3. Business Model · 4. Competitive Moat ·
-5. Proprietary Technology · 6. Financial Analysis · 7. KPIs &amp; Unit Economics · 8. Gearing &amp; Leverage ·
-9. Forecast · 10. Intrinsic Valuation (DCF) · 11. Relative Valuation · 12. Valuation Synthesis ·
-13. Risk · 14. Catalysts · 15. ESG &amp; Governance · 16. Recommendation · 17. Disclosures
-</div>
+<span class="exhibit-label">Contents</span>
+<div class="toc">0C. Media &amp; Market Research · 1. Executive Summary · 2. Investment Context · 3. Business Model · 4. Competitive Moat ·
+5. Proprietary Technology · 6. Financial Analysis · 7. KPIs &amp; Unit Economics · 8. Gearing &amp; Leverage · 9. Forecast ·
+10. Intrinsic Valuation (DCF) · 11. Relative Valuation &amp; Street View · 12. Valuation Synthesis · 13. Risk · 14. Catalysts ·
+15. ESG &amp; Governance · 16. Recommendation · 17. Disclosures</div>
 
-<!-- ============ 1. EXECUTIVE SUMMARY ============ -->
-<h2 class="sec"><span class="no">01</span>Executive Summary</h2>
-<p class="lede"><strong>Recommendation: AVOID at IPO.</strong> Fair value $66 (base), with a bull case of $128 that
-still sits below the $135 print. We would revisit constructively below ~$55 or on evidence the AI segment clears
-its cost of capital. The franchise is not the question; the price is.</p>
-
-<h3>Price-target triad (probability-weighted)</h3>
+<!-- 1. EXEC SUMMARY -->
+<h2><span class="no">01</span>Executive Summary</h2>
+<p class="lede"><strong>Recommendation: AVOID at IPO.</strong> Fair value $66 (base); bull case $128 still sits below the $135 print.
+We would revisit constructively below ~$55, or on evidence the AI segment can clear its cost of capital. The franchise is not the question; the price is.</p>
+<span class="exhibit-label">Exhibit 1 · Price-target triad (probability-weighted)</span>
 <table class="t618-table">
 <thead><tr><th>Scenario</th><th class="num">Prob.</th><th class="num">Segment EV</th><th class="num">Equity</th><th class="num">Per share</th><th class="num">vs. IPO</th></tr></thead>
 <tbody>
 <tr><td>Bull — global telecom utility + Starship + top-3 AI lab</td><td class="num">25%</td><td class="num">$1,600B</td><td class="num">$1,680B</td><td class="num">$128</td><td class="num neg">-5%</td></tr>
 <tr><td>Base — Starlink scales, Space breakeven, AI optional</td><td class="num">50%</td><td class="num">$640B</td><td class="num">$720B</td><td class="num">$55</td><td class="num neg">-59%</td></tr>
 <tr><td>Bear — ARPU erosion, capital intensity, AI burn</td><td class="num">25%</td><td class="num">$280B</td><td class="num">$360B</td><td class="num">$27</td><td class="num neg">-80%</td></tr>
-<tr style="border-top:1px solid var(--t618-gold)"><td><strong>Probability-weighted</strong></td><td class="num">100%</td><td class="num">—</td><td class="num">—</td><td class="num"><strong>$66</strong></td><td class="num neg"><strong>-51%</strong></td></tr>
+<tr><td><strong>Probability-weighted fair value</strong></td><td class="num">100%</td><td class="num">—</td><td class="num">—</td><td class="num"><strong>$66</strong></td><td class="num neg"><strong>-51%</strong></td></tr>
 </tbody></table>
-<p class="small">Net cash of ~$79.5B (post-IPO cash ~$99.5B less ~$20B est. debt) added to segment EV in each scenario. Shares: 13.08B Class A+B.</p>
+<p class="exhibit-note">Net cash of ~$79.5B (post-IPO cash ~$99.5B less ~$20B est. debt) added to segment EV in each scenario. Shares: 13.08B Class A+B. Our $66 brackets Morningstar ($63) and Doug Kass (~$70), not Oppenheimer ($190).</p>
 
 <h3>Investment thesis</h3>
 <ul class="tight">
-<li><strong>The numbers do not yet support the price.</strong> ~$18.7B FY25 revenue, an operating loss, and ~$19.6B of investing outflow against ~$6.8B operating cash flow. At ~90&times; revenue, SPCX is the most expensive mega-cap on any conventional metric.</li>
-<li><strong>Starlink is the real engine — and it is decelerating in price.</strong> Connectivity revenue +49.8% to $11.4B with $7.2B segment adjusted EBITDA, but ARPU has fallen from $99 to $66 as the mix turns consumer. Volume is winning; price is not.</li>
-<li><strong>The xAI merger is a financing event as much as a strategy.</strong> A cash-burning frontier-AI arm was bolted on in February 2026 and is the named first use of the $74.4B of proceeds. It is optionality, not earnings.</li>
-<li><strong>Control is absolute.</strong> Elon Musk holds &gt;50% of votes via 10-vote Class B; SPCX is a controlled company exempt from key Nasdaq governance rules. Key-person and governance risk are structural, not incidental.</li>
-<li><strong>We are with Morningstar, not Oppenheimer.</strong> Our independent SOTP ($66) corroborates the Street's bear ($63) far better than its bull ($190). Average sell-side PT ($139) ≈ the IPO — i.e., consensus already requires the optionality to pay off.</li>
+<li><strong>The numbers do not support the price.</strong> ~$18.7B FY25 revenue, a ~$2.6B operating loss, and ~$19.6B of investing outflow against ~$6.8B operating cash flow — roughly $14B of FCF burn. At ~90&times; revenue, SPCX is the most expensive mega-cap on any conventional metric.</li>
+<li><strong>Starlink is the engine — and its price is falling.</strong> Connectivity revenue +49.8% to $11.4B with $7.2B segment adjusted EBITDA, but ARPU has slid from $99 to $66 as the mix turns consumer and operating income went near-flat quarter-on-quarter despite subscribers doubling. Volume is winning; price is not.</li>
+<li><strong>The xAI merger is a financing event as much as a strategy.</strong> Bolted on all-stock in February 2026 (~$250B mark, ~3&times; its value seven months earlier); xAI lost $6.4B on ~$3.2B revenue and is the named first use of the $74.4B of proceeds. Optionality, not earnings.</li>
+<li><strong>Control is absolute.</strong> Musk holds ~85% of votes on ~42% of equity via 10-vote Class B; SPCX is a controlled company, exempt from key Nasdaq governance rules, with mandatory-arbitration and class-action waivers. Key-person and governance risk are structural.</li>
+<li><strong>Consensus already needs the optionality.</strong> The sell side is a barbell — Oppenheimer Buy $190 vs. CFRA Sell $115 and Morningstar $63 — averaging ~$164, near the price. Our independent SOTP corroborates the bears.</li>
 </ul>
 
-<h3>Answers to the framing questions (§0)</h3>
-<div class="two-col small">
-<p><strong>Purpose &amp; durability.</strong> The mission — multiplanetary life, global connectivity — is real and reflected in capital allocation (reusability, constellation, Starship). Durability of the <em>launch</em> edge is high; durability of <em>Starlink pricing</em> is the open question.</p>
-<p><strong>Proprietary technology.</strong> Genuinely defensible: booster reusability, a 10M-subscriber laser-mesh constellation, vertical integration. Not a commodity with a logo. The AI arm's defensibility is unproven.</p>
-<p><strong>The story the numbers tell.</strong> A profitable, hyper-growth connectivity utility is funding two capital sinks (Starship, AI). Strip them out and Starlink is a great business; consolidated, the entity is FCF-negative by design.</p>
-<p><strong>Right valuation lens.</strong> Sum-of-the-parts, because the three segments sit at different life-cycle stages. A single consolidated multiple is meaningless here.</p>
-<p><strong>3-input gearing.</strong> Value ≈ f(Starlink net adds × terminal ARPU × terminal margin). Those three move ~80% of the defensible value; Starship and AI are call options on top.</p>
-<p><strong>Where the leverage is.</strong> Operating leverage in Connectivity (fixed constellation, marginal subs near-free) — the single greatest sensitivity, and the crux of the bull case.</p>
-<p><strong>Embedded expectations.</strong> The $135 price requires ~$100B of steady-state FCF — ~$340B revenue, a ~27% CAGR sustained 12 years. Possible; not probable.</p>
-<p><strong>Bull / bear, steelmanned.</strong> Bull: Starlink becomes the planet's broadband layer, Starship collapses $/kg, xAI compounds — $1.6T+. Bear: ARPU erodes, Kuiper competes, capital intensity persists, Musk risk crystallizes — &lt;$400B.</p>
+<h3>Answers to the framing questions</h3>
+<div class="two-col">
+<p><strong>Purpose &amp; durability.</strong> The mission is real and reflected in capital allocation. Durability of the <em>launch</em> edge is high; durability of <em>Starlink pricing</em> is the open question.</p>
+<p><strong>Proprietary technology.</strong> Genuinely defensible — booster reusability, a 10M-subscriber laser-mesh constellation, vertical integration. The AI arm's defensibility is unproven.</p>
+<p><strong>The story the numbers tell.</strong> A profitable, hyper-growth connectivity utility funding two capital sinks (Starship, AI). Strip them out and Starlink is a great business; consolidated, the entity is FCF-negative by design.</p>
+<p><strong>Right valuation lens.</strong> Sum-of-the-parts — the three segments sit at different life-cycle stages; a single consolidated multiple is meaningless.</p>
+<p><strong>3-input gearing.</strong> Value ≈ f(Starlink net adds &times; terminal ARPU &times; terminal margin). Those three move ~80% of the defensible value; Starship and xAI are options on top.</p>
+<p><strong>Where the leverage is.</strong> Operating leverage in Connectivity — the fixed constellation, near-free marginal subscribers — the single greatest sensitivity and the crux of the bull case.</p>
+<p><strong>Embedded expectations.</strong> $135 requires ~$100B of steady-state FCF — ~$340B revenue, a ~27% CAGR sustained 12 years. Possible; not probable.</p>
+<p><strong>Bull / bear, steelmanned.</strong> Bull: Starlink becomes the planet's broadband layer, Starship collapses $/kg, xAI compounds — $1.6T+. Bear: ARPU erodes, competition lands, capital intensity persists, Musk risk crystallizes — &lt;$400B.</p>
 </div>
 
-<h3>Key metrics</h3>
+<span class="exhibit-label">Exhibit 2 · Key financials (USD millions)</span>
 <table class="t618-table">
 <thead><tr><th>Metric</th><th class="num">FY2023</th><th class="num">FY2024</th><th class="num">FY2025</th><th class="num">Q1'26</th></tr></thead>
 <tbody>
-<tr><td>Revenue ($M)</td><td class="num">10,387</td><td class="num">14,015</td><td class="num">18,674</td><td class="num">4,694</td></tr>
+<tr><td>Revenue</td><td class="num">10,387</td><td class="num">14,015</td><td class="num">18,674</td><td class="num">4,694</td></tr>
 <tr><td>Revenue growth</td><td class="num">—</td><td class="num pos">+35%</td><td class="num pos">+33%</td><td class="num pos">+15%</td></tr>
-<tr><td>Operating income ($M)</td><td class="num neg">(3,505)</td><td class="num pos">466</td><td class="num neg">(2,589)</td><td class="num neg">(1,943)</td></tr>
-<tr><td>Net income ($M)</td><td class="num neg">(4,620)</td><td class="num pos">791</td><td class="num neg">(4,937)</td><td class="num neg">(4,279)</td></tr>
-<tr><td>Operating cash flow ($M)</td><td class="num">4,520</td><td class="num">5,776</td><td class="num">6,785</td><td class="num">1,047</td></tr>
-<tr><td>Investing cash flow ($M)</td><td class="num neg">(4,860)</td><td class="num neg">(10,790)</td><td class="num neg">(19,570)</td><td class="num neg">(16,700)</td></tr>
-<tr><td>Cash &amp; restricted ($M)</td><td class="num">—</td><td class="num">4,690</td><td class="num">11,501</td><td class="num">25,124</td></tr>
+<tr><td>Operating income</td><td class="num neg">(3,505)</td><td class="num pos">466</td><td class="num neg">(2,589)</td><td class="num neg">(1,943)</td></tr>
+<tr><td>Net income</td><td class="num neg">(4,620)</td><td class="num pos">791</td><td class="num neg">(4,937)</td><td class="num neg">(4,279)</td></tr>
+<tr><td>Operating cash flow</td><td class="num">4,520</td><td class="num">5,776</td><td class="num">6,785</td><td class="num">1,047</td></tr>
+<tr><td>Investing cash flow</td><td class="num neg">(4,860)</td><td class="num neg">(10,790)</td><td class="num neg">(19,570)</td><td class="num neg">(16,700)</td></tr>
+<tr><td>Cash &amp; restricted</td><td class="num">—</td><td class="num">4,690</td><td class="num">11,501</td><td class="num">25,124</td></tr>
 </tbody></table>
-<p class="small">Source: SpaceX Form S-1/A, filed 3 June 2026 (accession 0001628280-26-040364). All figures as-of dates in §17.</p>
+<p class="exhibit-note">Source: SpaceX Form S-1/A, filed 3 June 2026 (SEC accession 0001628280-26-040364). As-of dates in §17.</p>
 
-<!-- ============ 2. INVESTMENT CONTEXT ============ -->
-<h2 class="sec"><span class="no">02</span>Investment Context</h2>
-<p>The listing arrives into a liquidity-rich, risk-on tape — the conditions under which the largest IPO in history
-($75B raised) can clear at a fixed $135 and open +11% at $150. That same liquidity sensitivity is the macro risk: a
-~90&times;-revenue, long-duration equity is acutely exposed to the rate and liquidity regime. Rising real yields compress
-exactly this kind of terminal-value-heavy name first.</p>
-<p><strong>Relevance to the Fund's mandate.</strong> TON618 Capital is a Bitcoin fund; SPCX is <em>not</em> a BTC-correlated
-instrument (unlike MSTR or COIN). Its relevance is twofold: (i) as a liquidity-regime barometer — a richly-valued, long-duration
-risk asset whose drawdowns would likely coincide with BTC risk-off; and (ii) as a potential <em>short / hedge</em> candidate
-against long-duration tech beta, given the asymmetric valuation. We hold no position. Any expression would be a hedge overlay,
-not a core sleeve.</p>
+<!-- 0C. MEDIA -->
+<h2><span class="no">0C</span>Media &amp; Market Research</h2>
+<p>A structured sweep of reporting around the listing (NPR, CNBC, Morningstar, TechCrunch, Defense News, SpaceNews and others; ~50
+dated findings, fact/opinion-tagged, in the Phase 0 snapshot). The signal: a record-breaking debut wrapped around an unusually
+divided sell side, with the debate hinging on whether Starship/AI monetization arrives before the cash-burn forces a re-rating.</p>
+<div class="grid2">
+<div>
+<h3>What the market did</h3>
+<ul class="tight">
+<li>Largest IPO in history: ~$75B raised at a fixed $135; opened ~$150, intraday high ~$169 (+25%), <strong>closed ~$161 (+19%)</strong>; ~$33B first-day dollar volume, exceeding QQQ and SPY that session.</li>
+<li>Prediction markets implied ~$176; the bid is real, narrow-float, and momentum-driven.</li>
+</ul>
+</div>
+<div>
+<h3>What the analysts said</h3>
+<ul class="tight">
+<li><span class="pos">Bull:</span> Oppenheimer Outperform $190 ("only vertically-integrated AI company," $10T TAM by 2035); Morgan Stanley models revenue to $3.4T by 2040.</li>
+<li><span class="neg">Bear:</span> Morningstar $63 (43% odds the AI/space-data-center bet is shelved); CFRA Sell $115; Chanos "hopes and dreams"; Kass ~$70 and shorting.</li>
+</ul>
+</div>
+</div>
+<p class="exhibit-note">Fact vs. opinion separated and dated in <code>normalized/media_research.json</code>. Two first-party sources (CNBC live blog, TheStreet) 403'd on direct fetch and are corroborated via secondary aggregators; the revenue-multiple (90&times; vs 94&times;) and average-PT ($164 mean vs $190 headline) conflicts are carried forward explicitly.</p>
 
-<!-- ============ 3. BUSINESS MODEL ============ -->
-<h2 class="sec"><span class="no">03</span>Company Overview &amp; Business Model</h2>
-<p>Space Exploration Technologies Corp. (founded 2002, Hawthorne CA; now incl. xAI post the February 2026 merger) operates
-three reportable segments:</p>
-<div class="grid3">
+<!-- 2. CONTEXT -->
+<h2><span class="no">02</span>Investment Context</h2>
+<p>The listing arrives into a liquidity-rich, risk-on tape — the only conditions under which a $75B raise clears at a fixed price
+and pops 19%. That same liquidity sensitivity is the macro risk: a ~90&times;-revenue, long-duration equity is acutely exposed to the
+rate and liquidity regime, and rising real yields compress terminal-value-heavy names first.</p>
+<p><strong>Relevance to the Fund.</strong> TON618 Capital is a Bitcoin fund; SPCX is <em>not</em> a BTC-correlated instrument (unlike
+MSTR or COIN). Its relevance is twofold: (i) a liquidity-regime barometer whose drawdowns would likely coincide with BTC risk-off;
+and (ii) a potential <em>short / hedge</em> candidate against long-duration tech beta, given the asymmetric valuation. We hold no position.</p>
+
+<!-- 3. BUSINESS MODEL -->
+<h2><span class="no">03</span>Company Overview &amp; Business Model</h2>
+<p>Space Exploration Technologies Corp. (founded 2002, Hawthorne CA; combined with xAI in February 2026) operates three segments:</p>
+<div class="kpis">
   <div class="fact"><span class="v">$7.1B</span><span class="l">Space / Launch — FY25 rev</span></div>
   <div class="fact"><span class="v">$11.4B</span><span class="l">Connectivity / Starlink — FY25 rev</span></div>
-  <div class="fact"><span class="v">~$0.2B</span><span class="l">AI / xAI — FY25 (partial)</span></div>
+  <div class="fact"><span class="v">~$0.5B</span><span class="l">AI / xAI — FY25 (partial)</span></div>
 </div>
 <ul class="tight">
-<li><strong>Space (Launch):</strong> Falcon 9/Heavy (reusable, dominant global launch share), Dragon, and Starship (in ramp). Revenue model: commercial &amp; government launch services, national-security missions. Segment adjusted EBITDA positive on a sustained basis since 2018; swung to an operating loss in 2025 on Starship investment.</li>
-<li><strong>Connectivity (Starlink):</strong> consumer, enterprise, mobility (maritime/aviation) and government broadband via a LEO laser-mesh constellation. Subscription revenue; 10.3M subscribers across 164 countries. The profit engine.</li>
-<li><strong>AI (xAI):</strong> Grok models, the X platform, and a GPU compute build-out. Acquired Feb 2026; consolidated; pre-profit. The named first use of IPO proceeds ("AI compute infrastructure").</li>
+<li><strong>Space (Launch):</strong> Falcon 9/Heavy (reusable; ~165 launches in 2025, ~85% of US orbital launches), Dragon, and Starship (in ramp). Commercial &amp; government launch; segment adjusted EBITDA positive since 2018; swung to an operating loss in 2025 on Starship investment.</li>
+<li><strong>Connectivity (Starlink):</strong> consumer, enterprise, mobility and government broadband via a LEO laser-mesh constellation; 10.3M subscribers across 164 markets. The profit engine.</li>
+<li><strong>AI (xAI):</strong> Grok models, the X platform, and a GPU compute build-out (Colossus). Acquired Feb 2026; consolidated; deeply loss-making (xAI lost $6.4B on ~$3.2B revenue in 2025). The named first use of IPO proceeds.</li>
 </ul>
-<p><strong>Capital structure &amp; control.</strong> Dual-class (Class A = 1 vote; Class B = 10 votes) plus a non-voting Class C
-created at IPO. Musk beneficially owns 849.5M Class A and 5,569.1M Class B (incl. 350M underlying options) — &gt;50% of votes.
-~$99.5B pro-forma cash; debt includes legacy X notes ($0.7B 3.875% '27s, $1.0B 5.0% '30s) plus term loans and GPU financing.
-Founder ownership is a strength (alignment, long horizon) and a risk (key-person, entrenchment) in equal measure.</p>
+<p><strong>Capital structure &amp; control.</strong> Dual-class (Class A = 1 vote; Class B = 10 votes) plus a non-voting Class C created at IPO.
+Musk holds ~42% of equity but ~85% of the vote. ~$99.5B pro-forma cash; debt includes legacy X notes ($0.7B 3.875% '27s, $1.0B 5.0% '30s)
+plus term loans and GPU financing; xAI's ~$17.5B debt is ring-fenced in a subsidiary. Founder ownership is alignment and entrenchment in equal measure.</p>
 
-<!-- ============ 4. MOAT ============ -->
-<h2 class="sec"><span class="no">04</span>Competitive Positioning &amp; Moat</h2>
+<!-- 4. MOAT -->
+<h2><span class="no">04</span>Competitive Positioning &amp; Moat</h2>
 <div class="grid2">
 <div>
 <h3>Wide moat — Launch</h3>
-<p>A durable cost-and-cadence monopoly. Reusability gives SpaceX a structural $/kg advantage no Western competitor has matched;
-national-security launch and NASA crew/cargo entrench it. Erosion vector: Starship execution missteps, or a credible reusable
-competitor (Blue Origin) at scale — both multi-year, low-probability near-term.</p>
+<p>A durable cost-and-cadence near-monopoly. Reusability gives a structural $/kg advantage no Western rival has matched; NSSL Phase 3
+locked in ~60% of national-security launch. The competitive field just weakened: Blue Origin's New Glenn booster exploded in a static
+fire on 28 May 2026, grounding its only pad for ~a year. Erosion vector: a Starship stumble, or a credible reusable competitor at scale — both multi-year.</p>
 </div>
 <div>
-<h3>Narrowing-to-wide moat — Starlink</h3>
-<p>First-scaled LEO broadband: network of inter-satellite lasers, spectrum priority, and a manufacturing lead. Moat source is
-scale + spectrum + capital intensity. Erosion vector is real and named: <strong>Amazon Kuiper</strong> and state-backed
-constellations, plus the ARPU erosion the data already shows. Pricing power is unproven at the consumer tier.</p>
+<h3>Contested moat — Starlink</h3>
+<p>First-scaled LEO broadband: ~10,000 satellites, inter-satellite lasers, spectrum priority (the ~$17B EchoStar buy), and a manufacturing
+lead. But the erosion vector is real and named: Amazon Leo (~330 sats, well behind), AST SpaceMobile, and Chinese constellations, plus the
+ARPU erosion the data already shows. Consumer pricing power is unproven; the durable moat is migrating to high-value aviation, maritime, and defense.</p>
 </div>
 </div>
-<p><strong>Porter, briefly.</strong> Supplier power low (vertical integration). Buyer power rising in consumer broadband (commoditizing).
-New-entrant threat high in capital terms but gated by spectrum and launch access — which SpaceX itself controls. Substitutes
-(terrestrial fiber/5G) strong in dense geographies, weak in the underserved markets Starlink targets. Net: a wide moat in launch,
-a contested but leading moat in connectivity.</p>
 
-<!-- ============ 5. PROPRIETARY TECH ============ -->
-<h2 class="sec"><span class="no">05</span>Proprietary Technology Assessment</h2>
-<p>Genuinely proprietary, not a commodity stack with a logo:</p>
+<!-- 5. PROP TECH -->
+<h2><span class="no">05</span>Proprietary Technology Assessment</h2>
 <ul class="tight">
-<li><strong>Booster reusability</strong> — the defining cost lever; a decade-plus operational lead and a flywheel (each flight compounds reliability data).</li>
-<li><strong>Laser-mesh constellation</strong> — inter-satellite optical links and vertically-integrated user terminals; a 10M-subscriber data/network advantage that compounds with density.</li>
-<li><strong>Starship</strong> — fully-reusable super-heavy lift; if it works, a step-change in $/kg that opens new markets (mass constellation refresh, point-to-point, lunar/Mars). High technical risk; enormous optionality.</li>
-<li><strong>AI flywheel (xAI)</strong> — the bull-case claim is a data (X) × compute × distribution (Starlink) loop. Unproven; the defensibility of frontier models is the most contested question in technology. We assign it option value, not franchise value.</li>
+<li><strong>Booster reusability</strong> — the defining cost lever; a decade-plus operational lead and a reliability flywheel.</li>
+<li><strong>Laser-mesh constellation</strong> — optical inter-satellite links and vertically-integrated terminals; a 10M-subscriber advantage that compounds with density.</li>
+<li><strong>Starship</strong> — fully-reusable super-heavy lift. As of Flight 12 (V3 debut, 22 May 2026) it remains <em>suborbital</em>: no orbit, no ship catch, no orbital-refuel demo, and NASA's safety panel flags Artemis HLS as potentially "years late." The ~$10/kg target is aspirational; independents model ~$100–600/kg versus Falcon's ~$2,700. High technical risk, enormous optionality.</li>
+<li><strong>AI flywheel (xAI)</strong> — the bull claim is a data (X) &times; compute (Colossus) &times; distribution (Starlink) loop, with orbital compute "as early as 2028." Grok is at 117M MAUs but 2025 AI revenue was only ~$0.5B against a multi-billion burn. We assign it option value, not franchise value.</li>
 </ul>
-<p>R&amp;D is heavy and largely expensed; the build-out shows up as the ~$19.6B investing outflow, not the income statement. Third-party
-dependence (GPU supply for AI; spectrum/regulatory for Starlink) is the principal platform risk.</p>
 
-<!-- ============ 6. FINANCIAL ANALYSIS ============ -->
-<h2 class="sec"><span class="no">06</span>Financial Statement Analysis</h2>
+<!-- 6. FINANCIALS -->
+<h2><span class="no">06</span>Financial Statement Analysis</h2>
+<span class="exhibit-label">Exhibit 3 · Revenue by segment (USD billions)</span>
 <figure>
-<svg viewBox="0 0 920 320" width="100%" role="img" aria-label="Revenue by segment and operating cash flow, FY2023-FY2025">
-  <!-- axes -->
-  <line x1="70" y1="20" x2="70" y2="260" stroke="#3A3A40"/>
-  <line x1="70" y1="260" x2="880" y2="260" stroke="#3A3A40"/>
-  <!-- gridlines + y labels ($B, 0..20) -->
+<svg viewBox="0 0 880 300" width="100%" role="img" aria-label="Revenue by segment FY2023-FY2025">
+  <line x1="60" y1="20" x2="60" y2="245" stroke="#9A958A"/>
+  <line x1="60" y1="245" x2="840" y2="245" stroke="#9A958A"/>
   <g fill="#9A958A" font-size="11" text-anchor="end">
-   <line x1="70" y1="260" x2="880" y2="260" stroke="#3A3A40"/><text x="62" y="264">0</text>
-   <line x1="70" y1="200" x2="880" y2="200" stroke="#26262B"/><text x="62" y="204">5</text>
-   <line x1="70" y1="140" x2="880" y2="140" stroke="#26262B"/><text x="62" y="144">10</text>
-   <line x1="70" y1="80"  x2="880" y2="80"  stroke="#26262B"/><text x="62" y="84">15</text>
-   <line x1="70" y1="20"  x2="880" y2="20"  stroke="#26262B"/><text x="62" y="24">20</text>
+   <line x1="60" y1="245" x2="840" y2="245" stroke="#E2DCCE"/><text x="52" y="249">0</text>
+   <line x1="60" y1="190" x2="840" y2="190" stroke="#E2DCCE"/><text x="52" y="194">5</text>
+   <line x1="60" y1="135" x2="840" y2="135" stroke="#E2DCCE"/><text x="52" y="139">10</text>
+   <line x1="60" y1="80"  x2="840" y2="80"  stroke="#E2DCCE"/><text x="52" y="84">15</text>
+   <line x1="60" y1="25"  x2="840" y2="25"  stroke="#E2DCCE"/><text x="52" y="29">20</text>
   </g>
-  <!-- stacked bars: Space (champagne), Connectivity (gold), AI (warmgray); scale 12px per $B -->
-  <!-- FY23 total 10.39: Space ~6.5, Conn ~3.9 -->
+  <!-- 11px per $B; base y=245 -->
   <g>
-    <rect x="180" y="182" width="90" height="78"  fill="#E6D2A2"/>
-    <rect x="180" y="135" width="90" height="47"  fill="#C9A24B"/>
-    <text x="225" y="278" fill="#9A958A" font-size="12" text-anchor="middle">FY23 · $10.4B</text>
+    <rect x="160" y="174" width="100" height="71" fill="#8A6D2B"/><rect x="160" y="131" width="100" height="43" fill="#C9A24B"/>
+    <text x="210" y="263" fill="#4A4840" font-size="12" text-anchor="middle">FY23 · $10.4B</text>
   </g>
-  <!-- FY24 total 14.0: Space ~7.0, Conn ~7.0 -->
   <g>
-    <rect x="430" y="176" width="90" height="84"  fill="#E6D2A2"/>
-    <rect x="430" y="92"  width="90" height="84"  fill="#C9A24B"/>
-    <text x="475" y="278" fill="#9A958A" font-size="12" text-anchor="middle">FY24 · $14.0B</text>
+    <rect x="400" y="168" width="100" height="77" fill="#8A6D2B"/><rect x="400" y="91" width="100" height="77" fill="#C9A24B"/>
+    <text x="450" y="263" fill="#4A4840" font-size="12" text-anchor="middle">FY24 · $14.0B</text>
   </g>
-  <!-- FY25 total 18.67: Space 7.09, Conn 11.39, AI 0.2 -->
   <g>
-    <rect x="680" y="175" width="90" height="85"  fill="#E6D2A2"/>
-    <rect x="680" y="38"  width="90" height="137" fill="#C9A24B"/>
-    <rect x="680" y="35"  width="90" height="3"   fill="#9A958A"/>
-    <text x="725" y="278" fill="#9A958A" font-size="12" text-anchor="middle">FY25 · $18.7B</text>
+    <rect x="640" y="167" width="100" height="78" fill="#8A6D2B"/><rect x="640" y="42" width="100" height="125" fill="#C9A24B"/><rect x="640" y="36" width="100" height="6" fill="#9A958A"/>
+    <text x="690" y="263" fill="#4A4840" font-size="12" text-anchor="middle">FY25 · $18.7B</text>
   </g>
-  <!-- legend -->
-  <g font-size="12" fill="#9A958A">
-    <rect x="180" y="298" width="12" height="12" fill="#E6D2A2"/><text x="198" y="309">Space/Launch</text>
-    <rect x="320" y="298" width="12" height="12" fill="#C9A24B"/><text x="338" y="309">Connectivity/Starlink</text>
-    <rect x="520" y="298" width="12" height="12" fill="#9A958A"/><text x="538" y="309">AI/xAI</text>
+  <g font-size="12" fill="#4A4840">
+    <rect x="160" y="282" width="12" height="12" fill="#8A6D2B"/><text x="178" y="292">Space/Launch</text>
+    <rect x="300" y="282" width="12" height="12" fill="#C9A24B"/><text x="318" y="292">Connectivity/Starlink</text>
+    <rect x="500" y="282" width="12" height="12" fill="#9A958A"/><text x="518" y="292">AI/xAI</text>
   </g>
 </svg>
-<figcaption>Revenue by segment, FY2023–FY2025. Starlink overtakes launch in 2024 and drives all incremental growth. Source: S-1/A.</figcaption>
 </figure>
+<p class="exhibit-note">Starlink overtakes launch in 2024 and drives all incremental growth. Source: S-1/A.</p>
 <ul class="tight">
 <li><strong>Growth, decelerating in rate:</strong> +35% (FY24), +33% (FY25), +15% YoY in Q1'26. Connectivity (+49.8%) masks slower launch.</li>
-<li><strong>Margins:</strong> consolidated operating margin negative ((13.9)% FY25) as Starship + AI absorb Starlink's profit. The 2024 net profit ($791M) was the exception, not the trend.</li>
-<li><strong>Cash quality:</strong> OCF is real and growing ($6.8B FY25), but capex/investing (~$19.6B) dwarfs it — the entity is structurally FCF-negative and funded by financing (+$26.4B FY25).</li>
-<li><strong>SBC &amp; dilution (critical):</strong> weighted shares rose 2,759M→3,884M; the xAI and Swarm equity plans were assumed; ~$460M cash paid for RSU net-settlement post-Q1. We treat SBC as a real, dilutive cost in the model — fully-diluted count, not adjusted-away.</li>
-<li><strong>Balance sheet:</strong> total assets $92.1B (Q1'26); ~$25.1B cash pre-IPO, ~$99.5B pro forma; modest debt. Liquidity is not the risk — returns on the deployed capital are.</li>
+<li><strong>Margins:</strong> consolidated operating margin negative ((13.9)% FY25) as Starship + AI absorb Starlink's profit. The 2024 net profit ($791M) was the exception.</li>
+<li><strong>Cash quality:</strong> OCF is real and growing ($6.8B FY25) but dwarfed by ~$19.6B investing — structurally FCF-negative (~$14B burn), funded by financing (+$26.4B FY25).</li>
+<li><strong>SBC &amp; dilution (critical):</strong> weighted shares rose 2,759M→3,884M; xAI and Swarm equity plans assumed; ~$460M cash paid for RSU net-settlement post-Q1. We model SBC as a real, dilutive cost — fully-diluted, not adjusted away.</li>
+<li><strong>Balance sheet:</strong> total assets $92.1B (Q1'26); ~$99.5B pro-forma cash; modest debt. Liquidity is not the risk — returns on deployed capital are.</li>
 </ul>
 
-<!-- ============ 7. KPIs ============ -->
-<h2 class="sec"><span class="no">07</span>KPIs &amp; Unit Economics</h2>
+<!-- 7. KPIs -->
+<h2><span class="no">07</span>KPIs &amp; Unit Economics</h2>
+<span class="exhibit-label">Exhibit 4 · Starlink subscribers vs. ARPU</span>
 <figure>
-<svg viewBox="0 0 920 300" width="100%" role="img" aria-label="Starlink subscribers and ARPU">
-  <line x1="60" y1="20" x2="60" y2="250" stroke="#3A3A40"/>
-  <line x1="60" y1="250" x2="870" y2="250" stroke="#3A3A40"/>
-  <!-- subs bars (gold), 0..11M scale, 18px/M -->
+<svg viewBox="0 0 880 290" width="100%" role="img" aria-label="Starlink subscribers and ARPU">
+  <line x1="55" y1="20" x2="55" y2="240" stroke="#9A958A"/><line x1="55" y1="240" x2="840" y2="240" stroke="#9A958A"/>
   <g fill="#C9A24B">
-    <rect x="120" y="209" width="70" height="41"/>   <!-- 2.3 -->
-    <rect x="320" y="171" width="70" height="79"/>   <!-- 4.4 -->
-    <rect x="520" y="90"  width="70" height="160"/>  <!-- 8.9 -->
-    <rect x="720" y="65"  width="70" height="185"/>  <!-- 10.3 -->
+    <rect x="110" y="201" width="80" height="39"/><rect x="300" y="165" width="80" height="75"/>
+    <rect x="490" y="88" width="80" height="152"/><rect x="680" y="64" width="80" height="176"/>
   </g>
-  <g fill="#9A958A" font-size="12" text-anchor="middle">
-    <text x="155" y="266">FY23</text><text x="355" y="266">FY24</text><text x="555" y="266">FY25</text><text x="755" y="266">Q1'26</text>
-    <text x="155" y="203" fill="#E6D2A2">2.3M</text><text x="355" y="165" fill="#E6D2A2">4.4M</text>
-    <text x="555" y="84" fill="#E6D2A2">8.9M</text><text x="755" y="59" fill="#E6D2A2">10.3M</text>
+  <g fill="#4A4840" font-size="12" text-anchor="middle">
+    <text x="150" y="257">FY23</text><text x="340" y="257">FY24</text><text x="530" y="257">FY25</text><text x="720" y="257">Q1'26</text>
+    <text x="150" y="195" fill="#8A6D2B">2.3M</text><text x="340" y="159" fill="#8A6D2B">4.4M</text>
+    <text x="530" y="82" fill="#8A6D2B">8.9M</text><text x="720" y="58" fill="#8A6D2B">10.3M</text>
   </g>
-  <!-- ARPU line (champagne), $/mo right axis 0..110 -> y = 250 - arpu*2 -->
-  <polyline fill="none" stroke="#B0413E" stroke-width="2.5"
-    points="155,52 355,68 555,88 755,118"/>
+  <polyline fill="none" stroke="#B0413E" stroke-width="2.5" points="150,52 340,68 530,88 720,118"/>
   <g fill="#B0413E" font-size="12" text-anchor="middle">
-    <circle cx="155" cy="52" r="3"/><text x="155" y="44">$99</text>
-    <circle cx="355" cy="68" r="3"/><text x="355" y="60">$91</text>
-    <circle cx="555" cy="88" r="3"/><text x="600" y="92">$81</text>
-    <circle cx="755" cy="118" r="3"/><text x="800" y="122">$66</text>
+    <circle cx="150" cy="52" r="3"/><text x="150" y="44">$99</text>
+    <circle cx="340" cy="68" r="3"/><text x="340" y="60">$91</text>
+    <circle cx="530" cy="88" r="3"/><text x="530" y="80">$81</text>
+    <circle cx="720" cy="118" r="3"/><text x="760" y="120">$66</text>
   </g>
-  <g font-size="12">
-    <rect x="120" y="278" width="12" height="12" fill="#C9A24B"/><text x="138" y="288" fill="#9A958A">Subscribers (M)</text>
-    <rect x="320" y="278" width="12" height="3"  fill="#B0413E" y="282"/><text x="338" y="288" fill="#9A958A">ARPU ($/mo)</text>
+  <g font-size="12" fill="#4A4840">
+    <rect x="110" y="272" width="12" height="12" fill="#C9A24B"/><text x="128" y="282">Subscribers (M)</text>
+    <line x1="300" y1="278" x2="324" y2="278" stroke="#B0413E" stroke-width="3"/><text x="330" y="282">ARPU ($/mo)</text>
   </g>
 </svg>
-<figcaption>Starlink: subscribers 4.5&times; in two years while ARPU falls $99→$66. Volume-led growth; pricing under pressure. Source: S-1/A.</figcaption>
 </figure>
+<p class="exhibit-note">Subscribers 4.5&times; in two years while ARPU falls $99→$66. Volume-led growth; pricing under pressure. Source: S-1/A.</p>
 <table class="t618-table">
 <thead><tr><th>Connectivity KPI</th><th class="num">FY2023</th><th class="num">FY2024</th><th class="num">FY2025</th><th class="num">Q1'26</th></tr></thead>
 <tbody>
@@ -281,193 +313,199 @@ dependence (GPU supply for AI; spectrum/regulatory for Starlink) is the principa
 <tr><td>Segment adj. EBITDA ($M)</td><td class="num">1,602</td><td class="num">3,849</td><td class="num">7,168</td><td class="num">2,087</td></tr>
 <tr><td>Segment EBITDA margin</td><td class="num">—</td><td class="num">~50%</td><td class="num">~63%</td><td class="num">~62%</td></tr>
 </tbody></table>
-<p>The bull/bear hinge: subscriber growth and margin expansion are exceptional, but ARPU is compressing faster than most models
-assume. If terminal ARPU settles near $50 in a mass-consumer mix, the Connectivity terminal value is materially lower than the
-price implies. Magic number, churn, and cohort curves are not disclosed at the granularity to fully close this — a data limitation noted in §17.</p>
+<p>The hinge: subscriber growth and margin are exceptional, but ARPU is compressing faster than most models assume and operating income
+went near-flat QoQ despite subscribers doubling. If terminal ARPU settles near $45–50 in a mass-consumer mix, Connectivity's terminal
+value is materially lower than the price implies. The ARPU-accretive offset is verticals — aviation (+68%), maritime, and Starshield — where SpaceX still dictates price.</p>
 
-<!-- ============ 8. GEARING ============ -->
-<h2 class="sec"><span class="no">08</span>Business-Model Gearing &amp; Leverage Map</h2>
-<p><strong>3-input model.</strong> Defensible value ≈ <em>Starlink net adds</em> × <em>terminal ARPU</em> × <em>terminal segment margin</em>.
+<!-- 8. GEARING -->
+<h2><span class="no">08</span>Business-Model Gearing &amp; Leverage Map</h2>
+<p><strong>3-input model.</strong> Defensible value ≈ <em>Starlink net adds</em> &times; <em>terminal ARPU</em> &times; <em>terminal segment margin</em>.
 Those three drive ~80% of the underwritable value; Starship and xAI are call options layered on top.</p>
+<span class="exhibit-label">Exhibit 5 · Sensitivity (swing in $/share around the $66 base)</span>
 <figure>
-<svg viewBox="0 0 900 230" width="100%" role="img" aria-label="Sensitivity tornado">
-  <line x1="450" y1="20" x2="450" y2="200" stroke="#C9A24B" stroke-width="1"/>
-  <text x="450" y="218" fill="#9A958A" font-size="11" text-anchor="middle">base fair value $66 · swing in $/share</text>
-  <!-- bars centered on 450; scale 6px per $ -->
-  <g font-size="12" fill="#0B0B0C">
-    <rect x="270" y="40" width="360" height="26" fill="#C9A24B"/><text x="120" y="58" fill="#9A958A">Terminal ARPU ±$25</text><text x="455" y="58">$36 — $96</text>
-    <rect x="312" y="78" width="276" height="26" fill="#E6D2A2"/><text x="120" y="96" fill="#9A958A">Starlink net adds</text><text x="455" y="96">$43 — $89</text>
-    <rect x="342" y="116" width="216" height="26" fill="#E6D2A2"/><text x="120" y="134" fill="#9A958A">Terminal margin ±10pp</text><text x="455" y="134">$48 — $84</text>
-    <rect x="372" y="154" width="156" height="26" fill="#9A958A"/><text x="120" y="172" fill="#9A958A">xAI option value</text><text x="455" y="172">$53 — $79</text>
+<svg viewBox="0 0 880 210" width="100%" role="img" aria-label="Sensitivity tornado">
+  <line x1="440" y1="20" x2="440" y2="180" stroke="#8A6D2B"/>
+  <g font-size="12">
+    <rect x="260" y="34" width="360" height="24" fill="#C9A24B"/><text x="120" y="50" fill="#4A4840" text-anchor="start">Terminal ARPU ±$25</text><text x="630" y="50" fill="#4A4840">$36–$96</text>
+    <rect x="302" y="70" width="276" height="24" fill="#B09040"/><text x="120" y="86" fill="#4A4840" text-anchor="start">Starlink net adds</text><text x="588" y="86" fill="#4A4840">$43–$89</text>
+    <rect x="332" y="106" width="216" height="24" fill="#8A6D2B"/><text x="120" y="122" fill="#4A4840" text-anchor="start">Terminal margin ±10pp</text><text x="558" y="122" fill="#4A4840">$48–$84</text>
+    <rect x="362" y="142" width="156" height="24" fill="#9A958A"/><text x="120" y="158" fill="#4A4840" text-anchor="start">xAI option value</text><text x="528" y="158" fill="#4A4840">$53–$79</text>
   </g>
+  <text x="440" y="198" fill="#9A958A" font-size="11" text-anchor="middle">base fair value $66</text>
 </svg>
-<figcaption>Tornado: terminal ARPU is the single greatest sensitivity — the crux of the Connectivity debate. Illustrative, anchored on the base SOTP.</figcaption>
 </figure>
-<p><strong>Operating leverage</strong> is concentrated in Connectivity: the constellation is a fixed cost; incremental subscribers carry
-near-zero marginal cost, so margin expands with scale — the bull mechanism. <strong>Financial leverage</strong> is low (net cash).
-<strong>Growth leverage</strong> (the launch→constellation→data flywheel) is the qualitative upside the price is paying for.</p>
+<p class="exhibit-note">Terminal ARPU is the single greatest sensitivity — the crux of the Connectivity debate. Illustrative, anchored on the base SOTP.</p>
+<p><strong>Operating leverage</strong> sits in Connectivity (fixed constellation, near-zero marginal cost per subscriber — the bull mechanism).
+<strong>Financial leverage</strong> is low (net cash). <strong>Growth leverage</strong> — the launch→constellation→data flywheel — is the qualitative upside the price is paying for.</p>
 
-<!-- ============ 9. FORECAST ============ -->
-<h2 class="sec"><span class="no">09</span>Forecast / Operating Model</h2>
-<p>We model on a fully-diluted basis with SBC treated as a real cost. Base-case shape (illustrative, driver-based):</p>
+<!-- 9. FORECAST -->
+<h2><span class="no">09</span>Forecast / Operating Model</h2>
+<p>Modeled fully-diluted with SBC treated as a real cost. Base-case shape (driver-based, illustrative):</p>
 <table class="t618-table">
 <thead><tr><th>Base case</th><th class="num">FY25A</th><th class="num">FY26E</th><th class="num">FY27E</th><th class="num">FY30E</th></tr></thead>
 <tbody>
 <tr><td>Revenue ($B)</td><td class="num">18.7</td><td class="num">25.5</td><td class="num">33.0</td><td class="num">62</td></tr>
 <tr><td>— Connectivity</td><td class="num">11.4</td><td class="num">16.5</td><td class="num">22.0</td><td class="num">40</td></tr>
 <tr><td>— Space</td><td class="num">7.1</td><td class="num">8.0</td><td class="num">9.0</td><td class="num">14</td></tr>
-<tr><td>— AI</td><td class="num">0.2</td><td class="num">1.0</td><td class="num">2.0</td><td class="num">8</td></tr>
+<tr><td>— AI</td><td class="num">0.5</td><td class="num">1.5</td><td class="num">2.5</td><td class="num">8</td></tr>
 <tr><td>FCF margin</td><td class="num neg">neg</td><td class="num neg">neg</td><td class="num">~0%</td><td class="num">~12%</td></tr>
 </tbody></table>
-<p class="small">Assumptions stated quantitatively in the linked model. Self-funding (FCF breakeven) is not reached until ~FY27 in the base
-case; the bull case pulls it forward, the bear pushes it past FY30. Every terminal-value dollar is back-loaded — the source of the valuation gap.</p>
+<p class="exhibit-note">Self-funding (FCF breakeven) is not reached until ~FY27 in the base case; the bull pulls it forward, the bear pushes it past FY30. Terminal value is back-loaded — the source of the valuation gap.</p>
 
-<!-- ============ 10. DCF ============ -->
-<h2 class="sec"><span class="no">10</span>Intrinsic Valuation — DCF &amp; Reverse-DCF</h2>
+<!-- 10. DCF -->
+<h2><span class="no">10</span>Intrinsic Valuation — DCF &amp; Reverse-DCF</h2>
 <div class="callout">
 <p style="margin:0"><strong>Reverse-DCF (embedded expectations).</strong> At $135 (EV ≈ $1.69T), WACC 10%, terminal growth 4%, the price implies
-<strong>~$100B of steady-state free cash flow.</strong> At a 30% FCF margin that is <strong>~$340B of revenue — ~18&times; FY25 —
-requiring a ~27% revenue CAGR sustained for 12 years.</strong> SpaceX could become that company. The market is treating a wide
-distribution of outcomes as the base case.</p>
+<strong>~$100B of steady-state free cash flow</strong> — at a 30% FCF margin, <strong>~$340B of revenue (~18&times; FY25), a ~27% revenue
+CAGR sustained for 12 years.</strong> SpaceX could become that company. The market is treating a wide distribution of outcomes as the base case.</p>
 </div>
-<p><strong>Forward DCF.</strong> Because the entity is FCF-negative today with terminal value dominating, a single consolidated DCF is
-low-confidence; we use it only to triangulate the SOTP. A 10% WACC, base-case ramp to ~12% FCF margin by FY30 and ~4% terminal growth
-yields an equity value consistent with the ~$55–66 SOTP base — i.e., well below the print. WACC build: risk-free ~4.3% (10Y), ERP ~5.0%,
-beta ~1.4 (de-levered, long-duration), no size premium given mega-cap scale.</p>
+<p><strong>Forward DCF.</strong> With the entity FCF-negative today and terminal value dominant, a single consolidated DCF is low-confidence;
+we use it only to triangulate the SOTP. A 10% WACC (risk-free ~4.3%, ERP ~5.0%, beta ~1.4 de-levered, no size premium), a base-case ramp to
+~12% FCF margin by FY30 and ~4% terminal growth yields equity value consistent with the ~$55–66 SOTP base — well below the print.</p>
 
-<!-- ============ 11. RELATIVE ============ -->
-<h2 class="sec"><span class="no">11</span>Relative Valuation &amp; Street View</h2>
-<p>No clean public comp exists — that is itself informative. Launch has no listed pure-play; Starlink's nearest analogues are
-satcom (EchoStar/SES/Viasat — slower, lower-margin, trading ~4–7&times; EBITDA) and high-growth connectivity platforms; xAI maps to
-frontier-AI private marks. A blunt EV/Revenue of ~90&times; versus ~3–10&times; for satcom and ~15–25&times; for the fastest software
-compounders frames the premium. We therefore lead with SOTP (§12), not multiples.</p>
+<!-- 11. RELATIVE -->
+<h2><span class="no">11</span>Relative Valuation &amp; Street View</h2>
+<p>No clean public comp exists — itself informative. Launch has no listed pure-play; Starlink's nearest analogues are satcom
+(EchoStar/SES/Viasat at ~4–7&times; EBITDA); xAI maps to frontier-AI private marks. A blunt ~90&times; EV/Revenue versus ~3–10&times; for
+satcom and ~15–25&times; for the fastest software compounders frames the premium. We therefore lead with SOTP, not multiples.</p>
+<span class="exhibit-label">Exhibit 6 · The Street is a barbell</span>
 <table class="t618-table">
 <thead><tr><th>Reference point</th><th class="num">Per share</th><th class="num">vs. IPO</th><th>Stance</th></tr></thead>
 <tbody>
-<tr><td>Oppenheimer (initiation)</td><td class="num">190</td><td class="num pos">+41%</td><td>Buy — bull case underwritten</td></tr>
-<tr><td>First-trade open (11 Jun)</td><td class="num">150</td><td class="num pos">+11%</td><td>Market clearing</td></tr>
-<tr><td>Average sell-side PT</td><td class="num">139</td><td class="num pos">+3%</td><td>≈ IPO — optionality required</td></tr>
+<tr><td>Oppenheimer — T. Horan</td><td class="num">190</td><td class="num pos">+41%</td><td>Outperform — bull case underwritten</td></tr>
+<tr><td>Prediction markets (implied)</td><td class="num">~176</td><td class="num pos">+30%</td><td>Momentum</td></tr>
+<tr><td>Average sell-side PT</td><td class="num">~164</td><td class="num pos">+21%</td><td>Barbell of Buy/Sell, not a mean view</td></tr>
+<tr><td>First-day close (12 Jun)</td><td class="num">~161</td><td class="num pos">+19%</td><td>Market clearing</td></tr>
 <tr><td>IPO price</td><td class="num">135</td><td class="num">—</td><td>Fixed price</td></tr>
+<tr><td>CFRA — K. Snyder</td><td class="num">115</td><td class="num neg">-15%</td><td>Sell — capital needs, valuation</td></tr>
+<tr><td>Doug Kass (Seabreeze)</td><td class="num">~70</td><td class="num neg">-48%</td><td>Short</td></tr>
 <tr><td><strong>TON618 fair value</strong></td><td class="num"><strong>66</strong></td><td class="num neg"><strong>-51%</strong></td><td><strong>Avoid</strong></td></tr>
-<tr><td>Morningstar (Owens)</td><td class="num">63</td><td class="num neg">-53%</td><td>Bearish — corroborates</td></tr>
+<tr><td>Morningstar — N. Owens</td><td class="num">63</td><td class="num neg">-53%</td><td>Significantly overvalued</td></tr>
 </tbody></table>
+<p class="exhibit-note">Range $63–$227; consensus "Buy" is thin and bimodal (≈4 Strong Buy / 1 Sell). Source: public reporting, retrieved 12 Jun 2026.</p>
 
-<!-- ============ 12. SYNTHESIS ============ -->
-<h2 class="sec"><span class="no">12</span>Valuation Synthesis — Football Field</h2>
-<p>The life-cycle stages differ by segment, so SOTP dominates; we weight it 70%, the triangulating DCF 30%. The consolidated
-fair-value <em>range</em> is $27–$128 with a point estimate of $66 — a range, not false precision.</p>
+<!-- 12. SYNTHESIS -->
+<h2><span class="no">12</span>Valuation Synthesis — Football Field</h2>
+<p>Life-cycle stages differ by segment, so SOTP dominates (weighted 70%, the triangulating DCF 30%). The consolidated fair-value
+<em>range</em> is $27–$128 with a $66 point estimate — a range, not false precision.</p>
+<span class="exhibit-label">Exhibit 7 · Valuation football field ($/share)</span>
 <figure>
-<svg viewBox="0 0 900 300" width="100%" role="img" aria-label="Football field valuation">
-  <!-- price axis 0..200, x = 60 + px*4 -->
-  <g stroke="#26262B"><line x1="60" y1="40" x2="60" y2="250"/>
-   <line x1="260" y1="40" x2="260" y2="250"/><line x1="460" y1="40" x2="460" y2="250"/>
-   <line x1="660" y1="40" x2="660" y2="250"/><line x1="860" y1="40" x2="860" y2="250"/></g>
+<svg viewBox="0 0 880 280" width="100%" role="img" aria-label="Football field valuation">
+  <g stroke="#E2DCCE">
+   <line x1="60" y1="40" x2="60" y2="235"/><line x1="255" y1="40" x2="255" y2="235"/>
+   <line x1="450" y1="40" x2="450" y2="235"/><line x1="645" y1="40" x2="645" y2="235"/><line x1="840" y1="40" x2="840" y2="235"/></g>
   <g fill="#9A958A" font-size="11" text-anchor="middle">
-   <text x="60" y="266">$0</text><text x="260" y="266">$50</text><text x="460" y="266">$100</text><text x="660" y="266">$150</text><text x="860" y="266">$200</text></g>
-  <!-- IPO line $135 -> x=600 ; open $150 -> x=660 -->
-  <line x1="600" y1="34" x2="600" y2="252" stroke="#C9A24B" stroke-width="1.5" stroke-dasharray="4 3"/>
-  <text x="600" y="30" fill="#C9A24B" font-size="11" text-anchor="middle">IPO $135</text>
-  <!-- bars: y rows -->
-  <g font-size="12" fill="#9A958A">
-    <!-- TON618 SOTP range 27..128, point 66 -->
-    <rect x="168" y="60" width="344" height="20" fill="#E6D2A2"/>
-    <line x1="324" y1="56" x2="324" y2="84" stroke="#0B0B0C" stroke-width="2"/>
-    <text x="60" y="74" text-anchor="start" fill="#9A958A">TON618 SOTP</text>
-    <text x="520" y="74" fill="#E6D2A2">$27–$128 · pt $66</text>
-    <!-- DCF triangulation ~ 50..80 -->
-    <rect x="260" y="96" width="120" height="20" fill="#C9A24B"/>
-    <text x="60" y="110" text-anchor="start">DCF (base)</text><text x="388" y="110">$50–$80</text>
-    <!-- Sell-side range 63..190 -->
-    <rect x="312" y="132" width="508" height="20" fill="#26262B" stroke="#9A958A"/>
-    <line x1="616" y1="128" x2="616" y2="156" stroke="#9A958A" stroke-width="2"/>
-    <text x="60" y="146" text-anchor="start">Sell-side range</text><text x="828" y="146" text-anchor="end" fill="#9A958A">$63–$190 · avg $139</text>
-    <!-- Reverse-DCF "justified at" 135 -->
-    <rect x="596" y="168" width="10" height="20" fill="#B0413E"/>
-    <text x="60" y="182" text-anchor="start">Price embeds</text><text x="620" y="182">requires ~$100B FCF</text>
+   <text x="60" y="251">$0</text><text x="255" y="251">$50</text><text x="450" y="251">$100</text><text x="645" y="251">$150</text><text x="840" y="251">$200</text></g>
+  <!-- IPO $135 -> x=60+135*3.9=586.5 ; close $161 -> x=60+161*3.9=687.9 -->
+  <line x1="587" y1="34" x2="587" y2="237" stroke="#C9A24B" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="587" y="30" fill="#8A6D2B" font-size="11" text-anchor="middle">IPO $135</text>
+  <line x1="688" y1="40" x2="688" y2="237" stroke="#9A958A" stroke-width="1" stroke-dasharray="2 3"/>
+  <text x="688" y="233" fill="#9A958A" font-size="10" text-anchor="middle">close $161</text>
+  <g font-size="12" fill="#4A4840">
+    <!-- TON618 SOTP 27..128 -> x 165..559 ; point 66 -> x 317 -->
+    <rect x="165" y="58" width="394" height="20" fill="#C9A24B"/>
+    <line x1="317" y1="54" x2="317" y2="82" stroke="#111113" stroke-width="2.5"/>
+    <text x="60" y="72" text-anchor="start">TON618 SOTP</text><text x="567" y="72">$27–$128 · pt $66</text>
+    <!-- DCF 50..80 -> x 255..372 -->
+    <rect x="255" y="94" width="117" height="20" fill="#8A6D2B"/>
+    <text x="60" y="108" text-anchor="start">DCF (base)</text><text x="380" y="108">$50–$80</text>
+    <!-- sell-side 63..227 -> x 306..945(cap 840) -->
+    <rect x="306" y="130" width="534" height="20" fill="#F0EAD8" stroke="#9A958A"/>
+    <text x="60" y="144" text-anchor="start">Sell-side range</text><text x="690" y="144" fill="#9A958A">$63–$227 · avg ~$164</text>
+    <rect x="583" y="166" width="9" height="20" fill="#B0413E"/>
+    <text x="60" y="180" text-anchor="start">Price embeds</text><text x="606" y="180">requires ~$100B FCF</text>
   </g>
-  <text x="60" y="232" font-size="11" fill="#9A958A">Even the bull SOTP ($128) and the Street average ($139) bracket the IPO — consensus already needs the optionality.</text>
+  <text x="60" y="222" font-size="11" fill="#9A958A">Even the bull SOTP ($128) sits below the IPO; the Street average (~$164) is propped by a single $190 bull.</text>
 </svg>
-<figcaption>Football field. The gold marker is the $66 point estimate; the dashed gold line is the $135 IPO. Sources: TON618 model; sell-side per public reports.</figcaption>
 </figure>
 
-<!-- ============ 13. RISK ============ -->
-<h2 class="sec"><span class="no">13</span>Risk Analysis</h2>
+<!-- 13. RISK -->
+<h2><span class="no">13</span>Risk Analysis</h2>
 <table class="t618-table">
 <thead><tr><th>Risk</th><th>Likelihood</th><th>Magnitude</th><th>Type</th></tr></thead>
 <tbody>
 <tr><td>Valuation / multiple compression</td><td>High</td><td>High</td><td>Market</td></tr>
-<tr><td>Starlink ARPU erosion &amp; Kuiper competition</td><td>Medium</td><td>High</td><td>Competitive (T)</td></tr>
-<tr><td>Capital intensity / sustained negative FCF</td><td>High</td><td>Medium</td><td>Financial</td></tr>
-<tr><td>AI (xAI) cash burn fails to clear cost of capital</td><td>Medium</td><td>High</td><td>Execution (T)</td></tr>
-<tr><td>Key-person — Elon Musk</td><td>Low</td><td>Very High</td><td>Governance</td></tr>
-<tr><td>Starship technical / schedule slippage</td><td>Medium</td><td>Medium</td><td>Tech (T)</td></tr>
-<tr><td>Controlled-company governance / dilution</td><td>Certain</td><td>Medium</td><td>Governance (T)</td></tr>
-<tr><td>Regulatory / spectrum / geopolitical</td><td>Medium</td><td>Medium</td><td>Regulatory</td></tr>
+<tr><td>Starlink ARPU erosion &amp; competition</td><td>Medium</td><td>High</td><td>Competitive</td></tr>
+<tr><td>Capital intensity / ~$14B FCF burn</td><td>High</td><td>Medium</td><td>Financial</td></tr>
+<tr><td>AI (xAI) burn fails to clear cost of capital</td><td>Medium</td><td>High</td><td>Execution</td></tr>
+<tr><td>Key-person — Elon Musk (part-time, ~85% votes)</td><td>Low</td><td>Very High</td><td>Governance</td></tr>
+<tr><td>Starship technical / schedule slippage</td><td>Medium</td><td>Medium</td><td>Technology</td></tr>
+<tr><td>Controlled-company governance / arbitration waivers</td><td>Certain</td><td>Medium</td><td>Governance</td></tr>
+<tr><td>Regulatory — FCC spectrum (denied Apr'26), gov't 30–40% of rev</td><td>Medium</td><td>Medium</td><td>Regulatory</td></tr>
+<tr><td>Lock-up overhang (tiered; main tranche ~Dec'26)</td><td>High</td><td>Medium</td><td>Technical</td></tr>
 </tbody></table>
-<p><strong>Market risk.</strong> A newly-listed, ~90&times;-revenue, long-duration equity. We would expect 30-day realized volatility well
-north of 50% annualized post-listing; a 5th-percentile 12-month outcome below $40 is plausible on a risk-off + ARPU-disappointment combination.</p>
+<p><strong>Market risk.</strong> A newly-listed, ~90&times;-revenue, low-float, long-duration equity. We expect 30-day realized volatility
+well above 50% annualized; a 5th-percentile 12-month outcome below $40 is plausible on a risk-off + ARPU-disappointment combination.</p>
 <div class="callout">
-<p style="margin:0"><strong class="bear">Steelmanned bear thesis (mandatory).</strong> Starlink ARPU settles near $45–$50 as consumer mix and Kuiper
-price-competition bite; Connectivity margins plateau below bull assumptions; Starship consumes capital for years without commercial
-payoff; xAI burns $10B+/yr against uncertain monetization; the controlled-company structure suppresses any governance correction; and
-a liquidity-regime shift compresses the multiple. Fair value falls toward the $27 bear case — a >70% drawdown from the print. None of
-this requires SpaceX to fail operationally; it only requires the price to have over-discounted optionality.</p>
+<p style="margin:0"><strong class="neg">Steelmanned bear thesis (mandatory).</strong> Starlink ARPU settles at $45–50 as consumer mix and competition bite;
+Connectivity margins plateau; Starship consumes capital for years without commercial payoff; xAI burns $10B+/yr against thin Grok
+monetization; the controlled-company structure suppresses any governance correction; and a liquidity-regime shift compresses the multiple.
+Fair value falls toward the $27 bear case — a &gt;80% drawdown from the close. None of this requires SpaceX to fail operationally; it only requires the price to have over-discounted optionality.</p>
 </div>
 
-<!-- ============ 14. CATALYSTS ============ -->
-<h2 class="sec"><span class="no">14</span>Catalysts &amp; Monitoring</h2>
+<!-- 14. CATALYSTS -->
+<h2><span class="no">14</span>Catalysts &amp; Monitoring</h2>
 <table class="t618-table">
 <thead><tr><th>Catalyst</th><th>Window</th><th>Read</th></tr></thead>
 <tbody>
-<tr><td>First post-IPO print (Q2'26)</td><td>Aug 2026</td><td>ARPU trajectory; AI segment burn rate</td></tr>
-<tr><td>Starship orbital/reuse milestones</td><td>2H'26+</td><td>Validates / breaks the launch optionality</td></tr>
-<tr><td>Starlink direct-to-cell scale</td><td>2026–27</td><td>The mass-market ARPU swing factor</td></tr>
-<tr><td>IPO lock-up expiry</td><td>~Dec 2026</td><td>Supply overhang; insider selling signal</td></tr>
-<tr><td>Amazon Kuiper commercial launch</td><td>2026–27</td><td>First real competitive read on pricing</td></tr>
+<tr><td>First post-IPO print (Q2'26)</td><td>Aug 2026</td><td>ARPU trajectory; AI-segment burn rate</td></tr>
+<tr><td>Starship orbital / refuel / catch milestones</td><td>2H'26+</td><td>Validates or breaks the launch optionality</td></tr>
+<tr><td>Starlink direct-to-cell scale (EchoStar spectrum)</td><td>2026–27</td><td>The mass-market ARPU swing factor</td></tr>
+<tr><td>Tiered lock-up — main tranche</td><td>~Dec 2026</td><td>Supply overhang; insider-selling signal</td></tr>
+<tr><td>Amazon Leo / AST commercial scale</td><td>2026–27</td><td>First real competitive read on pricing</td></tr>
 </tbody></table>
 <p><strong>Invalidation trip-wires (what would change our call):</strong> (i) Starlink ARPU stabilizing above $70 with continued net adds;
-(ii) AI segment showing a credible path to cash-flow positive; (iii) the stock de-rating below ~$55, where risk/reward turns favorable.
-Any two would move us from Avoid toward Hold/Accumulate.</p>
+(ii) the AI segment showing a credible path to cash-flow positive; (iii) a de-rate below ~$55. Any two would move us from Avoid toward Hold/Accumulate.</p>
 
-<!-- ============ 15. ESG / GOV ============ -->
-<h2 class="sec"><span class="no">15</span>ESG &amp; Governance</h2>
+<!-- 15. ESG / GOV -->
+<h2><span class="no">15</span>ESG &amp; Governance</h2>
 <ul class="tight">
-<li><strong>Governance (material).</strong> Dual-class with 10-vote Class B and a controlled-company exemption from Nasdaq independence rules; a non-voting Class C; related-party history (xAI merger, Swarm). Minority Class A holders have limited recourse. This is the single most important non-financial risk and is priced into our governance discount.</li>
-<li><strong>Insider ownership.</strong> Musk &gt;50% of votes; high alignment, high entrenchment. Watch Form 4 activity post lock-up.</li>
-<li><strong>Environmental/social.</strong> Net-positive narrative (global connectivity, reusability reducing launch waste) against orbital-debris, launch-site environmental, and content-moderation (X) scrutiny.</li>
+<li><strong>Governance (material).</strong> Musk ~85% of votes on ~42% of equity via 10-vote Class B; controlled-company exemptions from
+Nasdaq independence rules; a non-voting Class C; mandatory arbitration plus jury-trial and class-action waivers; removable only by Class B
+vote. The xAI merger was a related-party deal priced by the controller through Nevada entities (the SolarCity precedent). Minority Class A
+holders own cash-flow exposure with effectively no control. This is the dominant non-financial risk and the basis of our governance discount.</li>
+<li><strong>Insider ownership.</strong> High alignment, high entrenchment; the $1T Tesla pay-package fight is the precedent for how retention can be wielded. Watch Form 4 activity into the lock-up.</li>
+<li><strong>Environmental/social.</strong> Net-positive narrative (global connectivity, launch reuse) against orbital-debris, launch-site environmental, and X content-moderation scrutiny now inside the perimeter.</li>
 </ul>
 
-<!-- ============ 16. RECOMMENDATION ============ -->
-<h2 class="sec"><span class="no">16</span>Recommendation</h2>
-<p class="lede"><strong>AVOID at the IPO / first-trade.</strong> Fair value $66 (base), $128 (bull), $27 (bear); probability-weighted $66,
-51% below the $135 print and ~56% below the $150 open. We would not initiate a long here.</p>
+<!-- 16. RECOMMENDATION -->
+<h2><span class="no">16</span>Recommendation</h2>
+<p class="lede"><strong>AVOID at the IPO / first-trade.</strong> Fair value $66 (base), $128 (bull), $27 (bear); probability-weighted $66 —
+51% below the $135 print and ~59% below the ~$161 close.</p>
 <ul class="tight">
 <li><strong>For the Fund:</strong> no core position (non-BTC-correlated). The actionable expression is a <em>tactical short / put overlay</em>
-as a hedge against long-duration tech beta and a liquidity-regime turn — sized small, given borrow cost, squeeze risk on a
-beloved name, and Musk-headline convexity. Entry discipline matters more than the thesis.</li>
+as a hedge against long-duration tech beta and a liquidity-regime turn — sized small, given borrow cost, squeeze risk on a beloved name,
+Musk-headline convexity, and the tiered lock-up that delays the natural supply catalyst to ~December 2026. Entry discipline matters more than the thesis.</li>
 <li><strong>Revisit long</strong> below ~$55, or on ARPU stabilization + AI cash-flow visibility.</li>
-<li><strong>Expected value:</strong> 0.25($128) + 0.50($55) + 0.25($27) = $66. The asymmetry (−80% bear vs. −5% bull) is the whole point: you are paid little to be right and lose much to be wrong.</li>
+<li><strong>Expected value:</strong> 0.25($128) + 0.50($55) + 0.25($27) = $66. The asymmetry (−80% bear vs. −5% bull) is the point: you are paid little to be right and lose much to be wrong.</li>
 </ul>
 
-<!-- ============ 17. DISCLOSURES ============ -->
-<h2 class="sec"><span class="no">17</span>Disclosures &amp; Data Integrity</h2>
-<p class="small"><strong>Primary source.</strong> SpaceX Form S-1/A, filed 3 June 2026 (SEC accession 0001628280-26-040364; CIK 0001181412),
-the operative amended prospectus; original S-1 filed 20 May 2026. Market/analyst context per public reporting (NPR, Morningstar, Oppenheimer
-via aggregators), retrieved 12 June 2026. All financial figures are as-of 31 March 2026 (Q1'26) or fiscal-year-end as labelled. The full
-Source &amp; Evidence Log is the Phase 0 <code>manifest.json</code> in the linked data snapshot.</p>
-<p class="small"><strong>Key assumptions &amp; limitations.</strong> SOTP segment multiples and the scenario probabilities (25/50/25) are TON618 judgments,
-stated explicitly. Total debt of ~$20B is an estimate pending full balance-sheet extraction; net-cash sensitivity is &lt;5% of equity value.
-Starlink churn, cohort retention, and magic-number are not disclosed at full granularity. The DCF is low-confidence given terminal-value dominance and is used only to triangulate the SOTP.</p>
-<p class="small"><strong>Conflicts.</strong> TON618 Capital holds no SPCX position as of the report date. The Fund is a Bitcoin fund; SPCX is not a
-fund holding or a BTC-correlated instrument. <strong>Version</strong> 1.0 · analyst: TON618 Equity Research · generated by the
-ton618-tech-valuation tool.</p>
+<!-- 17. DISCLOSURES -->
+<h2><span class="no">17</span>Disclosures &amp; Data Integrity</h2>
+<p class="t618-caption"><strong>Primary source.</strong> SpaceX Form S-1/A, filed 3 June 2026 (SEC accession 0001628280-26-040364; CIK 0001181412),
+the operative amended prospectus; original S-1 20 May 2026. Financial figures as-of 31 March 2026 (Q1'26) or fiscal-year-end as labelled.
+The full Source &amp; Evidence Log is the Phase 0 <code>manifest.json</code> (status: partial — the only gap is pre-IPO earnings transcripts, which do not exist).</p>
+<p class="t618-caption"><strong>Key assumptions &amp; limitations.</strong> SOTP segment multiples and scenario probabilities (25/50/25) are TON618 judgments,
+stated explicitly. Total debt ~$20B is an estimate pending full balance-sheet extraction; net-cash sensitivity is &lt;5% of equity value.
+Starlink churn, cohort retention, and magic-number are not disclosed at full granularity. Vertical-segment revenue figures (aviation/maritime/Starshield)
+are third-party estimates, lower-confidence than S-1 consolidated numbers. The DCF is low-confidence given terminal-value dominance and only triangulates the SOTP.</p>
+<p class="t618-caption"><strong>Conflicts.</strong> TON618 Capital holds no SPCX position as of the report date. The Fund is a Bitcoin fund; SPCX is not a Fund
+holding or a BTC-correlated instrument. <strong>Version</strong> 1.1 · §0C deep-research media sweep added · analyst: TON618 Equity Research · generated by the ton618-tech-valuation tool.</p>
+<span class="exhibit-label">Selected sources (media sweep, retrieved 12 Jun 2026)</span>
+<div class="sources">
+NPR / CNBC — IPO pricing &amp; first-day trading · Yahoo Finance — Oppenheimer initiation ($190) · Morningstar / TradingKey — fair value $63 ·
+CNBC / TipRanks — CFRA Sell $115 · Bloomberg / US News — Chanos · Stocktwits — Kass · stockanalysis.com — consensus ·
+Via Satellite — S-1 financials · The Next Web — Starlink ARPU · Defense News — Pentagon pricing · Fierce Network — EchoStar $17B spectrum ·
+CNBC — xAI–SpaceX merger · The D&amp;O Diary — governance · TechCrunch — xAI burn · NASASpaceFlight — Starship Flight 12 ·
+SpacePolicyOnline — Artemis HLS · Spaceflight Now — New Glenn explosion · Morningstar — tiered lock-up · AInvest — FCF analysis.
+Full URLs in <code>normalized/media_research.json</code>.
+</div>
 
 <hr class="t618-rule--quasar" style="margin-top:2rem">
-<p class="t618-disclosure">TON618 Capital. For information purposes only. Not an offer to sell or a solicitation to buy any security or
-interest. Past performance is not indicative of future results. Digital assets and equities are volatile and may result in loss of
-capital. This report was produced by an automated research tool and has not been reviewed by a registered investment adviser; it is not
-investment advice.</p>
+<p class="t618-disclosure">TON618 Capital. For information purposes only. Not an offer to sell or a solicitation to buy any security or interest.
+Past performance is not indicative of future results. Digital assets and equities are volatile and may result in loss of capital. This report
+was produced by an automated research tool and has not been reviewed by a registered investment adviser; it is not investment advice.</p>
 
-</div>
+</main>
 </body>
 </html>
